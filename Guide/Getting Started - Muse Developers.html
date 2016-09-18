@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://developer.choosemuse.com/research-tools/getting-started -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" style="height: auto;" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--
+===========================================================================
+ Brooklyn WordPress Theme by United Themes (http://www.unitedthemes.com)
+ Marcel Moerkens & Matthias Nettekoven 
+===========================================================================
+--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
+        
+        
+    		
+        <!-- Title -->
+        <title>Getting Started - Muse Developers</title>
+
+	    
+    <!-- RSS & Pingbacks -->
+	<link rel="pingback" href="http://developer.choosemuse.com/xmlrpc.php">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    
+    <!-- Favicon -->
+	        
+                        
+        <link rel="shortcut icon" href="http://www.choosemuse.com/wp-content/uploads/2014/11/fav_icon_32x32.ico" type="image/x-icon">
+        <link rel="icon" href="http://www.choosemuse.com/wp-content/uploads/2014/11/fav_icon_32x32.ico" type="image/x-icon">
+        
+        
+    <!-- Apple Touch Icons -->    
+        
+        
+        
+            
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+    	
+    
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://developer.choosemuse.com/research-tools/getting-started">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Started - Muse Developers">
+<meta property="og:description" content="Research Tools | Getting Started Introduction Using the Muse Research Tools works like this: Pair your device with Muse. Run MuseIO to connect to Muse. Receive Muse data via OSC in another program like MuseLab or MusePlayer. So! Let’s get started: Install the Research Tools Download and install the Muse Research Tools. The installer includes …">
+<meta property="og:url" content="http://developer.choosemuse.com/research-tools/getting-started">
+<meta property="og:site_name" content="Muse Developers">
+<meta property="article:section" content="Manual">
+<meta property="og:image" content="//storage.googleapis.com/ix_choosemuse/uploads/dev-site/sidebar/ic_research_white_16.svg">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/run_museio_mac.gif">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/open_port_5000.png">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/see_incoming_messages.png">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/click_new_visualizer.png">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/see_signal_groups.png">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/label_eeg_graph.png">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/basic_eeg_blink1.gif">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/eeg_acc_alpha2.gif">
+<meta property="og:image" content="http://dev.choosemuse.com/wp-content/uploads/2015/04/hit_record.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Research Tools | Getting Started Introduction Using the Muse Research Tools works like this: Pair your device with Muse. Run MuseIO to connect to Muse. Receive Muse data via OSC in another program like MuseLab or MusePlayer. So! Let’s get started: Install the Research Tools Download and install the Muse Research Tools. The installer includes […]">
+<meta name="twitter:title" content="Getting Started - Muse Developers">
+<meta name="twitter:domain" content="Muse Developers">
+<meta name="twitter:image:src" content="//storage.googleapis.com/ix_choosemuse/uploads/dev-site/sidebar/ic_research_white_16.svg">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Muse Developers » Feed" href="http://developer.choosemuse.com/feed">
+<link rel="alternate" type="application/rss+xml" title="Muse Developers » Comments Feed" href="http://developer.choosemuse.com/comments/feed">
+<link rel="stylesheet" id="google-calendar-events-qtip-css" href="./Getting Started - Muse Developers_files/jquery.qtip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-calendar-events-public-css" href="./Getting Started - Muse Developers_files/gce-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-responsive-grid-css" href="./Getting Started - Muse Developers_files/ut-responsive-grid.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-fontawesome-css" href="./Getting Started - Muse Developers_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-animate-css" href="./Getting Started - Muse Developers_files/ut.animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-elastislide-css" href="./Getting Started - Muse Developers_files/ut.elastislide.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-fancyrotator-css" href="./Getting Started - Muse Developers_files/ut.fancyrotator.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-shortcodes-css" href="./Getting Started - Muse Developers_files/ut.shortcode.css" type="text/css" media="all">
+<link rel="stylesheet" id="toc-screen-css" href="./Getting Started - Muse Developers_files/screen.css" type="text/css" media="all">
+<link rel="stylesheet" id="wml_client_style-css" href="./Getting Started - Muse Developers_files/wmlc_client.css" type="text/css" media="all">
+<link rel="stylesheet" id="wprssmi_template_styles-css" href="./Getting Started - Muse Developers_files/templates.css" type="text/css" media="all">
+<link rel="stylesheet" id="kamn-css-easy-twitter-feed-widget-css" href="./Getting Started - Muse Developers_files/easy-twitter-feed-widget.css" type="text/css" media="all">
+<link rel="stylesheet" id="mailchimp-for-wp-checkbox-css" href="./Getting Started - Muse Developers_files/checkbox.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="main-font-face-css" href="./Getting Started - Muse Developers_files/ut-fontface.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-Lato-css" href="./Getting Started - Muse Developers_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-flexslider-css" href="./Getting Started - Muse Developers_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-prettyphoto-css" href="./Getting Started - Muse Developers_files/prettyPhoto.css" type="text/css" media="all">
+<link rel="stylesheet" id="ut-superfish-css" href="./Getting Started - Muse Developers_files/ut-superfish.css" type="text/css" media="all">
+<link rel="stylesheet" id="unitedthemes-style-css" href="./Getting Started - Muse Developers_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="./Getting Started - Muse Developers_files/default.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mailchimp-for-wp-form-css" href="./Getting Started - Muse Developers_files/form.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mailchimp-top-bar-css" href="./Getting Started - Muse Developers_files/bar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="prism-css" href="./Getting Started - Muse Developers_files/prism.css" type="text/css" media="all">
+<link rel="stylesheet" id="style.owl.carousel-css" href="./Getting Started - Muse Developers_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="style.owl.carousel.theme-css" href="./Getting Started - Muse Developers_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="style.owl.carousel.transitions-css" href="./Getting Started - Muse Developers_files/owl.transitions.css" type="text/css" media="all">
+<link rel="stylesheet" id="style.owl.carousel.styles-css" href="./Getting Started - Muse Developers_files/styles.css" type="text/css" media="all">
+<script id="twitter-wjs" src="./Getting Started - Muse Developers_files/widgets.js"></script><script async="" src="./Getting Started - Muse Developers_files/analytics.js"></script><script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/modernizr.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.elastislide.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/wmljs.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.lazy.load.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/owl.carousel.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/script.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPdTreeSettings = {"animate":"1","duration":"250","imgurl":"http:\/\/developer.choosemuse.com\/wp-content\/plugins\/wp-dtree-30\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/wp-dtree.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://developer.choosemuse.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://developer.choosemuse.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.1.1">
+<link rel="shortlink" href="http://developer.choosemuse.com/?p=196">
+<style type="text/css">::-moz-selection{ background: #52b9e9; }::selection { background:#52b9e9; }a, .ha-transparent #navigation ul li a:hover { color: #52b9e9; }.ut-language-selector a:hover { color: #52b9e9; }.ut-custom-icon-link:hover i { color: #52b9e9 !important; }.ut-hide-member-details:hover, #ut-blog-navigation a:hover, .light .ut-hide-member-details, .ut-mm-button:hover:before, .ut-mm-trigger.active .ut-mm-button:before, .ut-mobile-menu a:after { color: #52b9e9; }p.lead span, .entry-title span, #cancel-comment-reply-link, .member-description-style-3 .ut-member-title,.ut-twitter-rotator h2 a, .themecolor{ color: #52b9e9; }.icons-ul i, .comments-title span, .member-social a:hover, .ut-parallax-quote-title span, .ut-member-style-2 .member-description .ut-member-title { color:#52b9e9; }.about-icon, .ut-skill-overlay, .ut-dropcap-one, .ut-dropcap-two, .ut-mobile-menu a:hover, .themecolor-bg, .ut-btn.ut-pt-btn:hover, .ut-btn.dark:hover { background:#52b9e9; }blockquote, div.wpcf7-validation-errors, .ut-hero-style-5 .hero-description, #navigation ul.sub-menu, .ut-member-style-3 .member-social a:hover { border-color:#52b9e9; }.cta-section, .ut-btn.theme-btn, .ut-social-link:hover .ut-social-icon, .ut-member-style-2 .ut-so-link:hover { background:#52b9e9 !important; }.ut-social-title, .ut-service-column h3 span, .ut-rq-icon{ color:#52b9e9; }.count, .ut-icon-list i { color:#52b9e9; }.client-section, .ut-portfolio-pagination.style_two a.selected:hover, .ut-portfolio-pagination.style_two a.selected, .ut-portfolio-pagination.style_two a:hover, .ut-pt-featured { background:#52b9e9 !important; }ins, mark, .ut-alert.themecolor, .ut-portfolio-menu.style_two li a:hover, .ut-portfolio-menu.style_two li a.selected { background:#52b9e9; }.footer-content i { color:#52b9e9; }.copyright a:hover, .footer-content a:hover, .toTop:hover, .ut-footer-dark a.toTop:hover, .hero-title span { color:#52b9e9; }blockquote span { color:#52b9e9; }.entry-meta a:hover, #secondary a:hover, .page-template-templatestemplate-archive-php a:hover { color:#52b9e9; }h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .ut-header-dark .site-logo .logo a:hover { color:#52b9e9; }a.more-link:hover, .fa-ul li .fa{ color:#52b9e9; }.ut-pt-featured-table .ut-pt-info .fa-li{ color: #52b9e9 !important; }.button, input[type="submit"], input[type="button"], .dark button, .dark input[type="submit"], .dark input[type="button"], .light .button, .light input[type="submit"], .light input[type="button"] { background:#52b9e9; }.img-hover { background:rgb(82,185,233);background:rgba(82,185,233, 0.85); }.portfolio-caption { background:rgb(82,185,233);background:rgba(82,185,233, 0.85); }.team-member-details { background:rgba(82,185,233, 0.85 ); }.ut-avatar-overlay { background:rgb(82,185,233); background:rgba(82,185,233, 0.85 ); }.mejs-controls .mejs-time-rail .mejs-time-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .format-link .entry-header a { background:#52b9e9 !important; }.light .ut-portfolio-menu li a:hover, .light .ut-portfolio-pagination a:hover, .light .ut-nav-tabs li a:hover, .light .ut-accordion-heading a:hover { border-color:#52b9e9 !important; }.light .ut-portfolio-menu li a:hover, .light .ut-portfolio-pagination a:hover, .ut-portfolio-list li strong, .light .ut-nav-tabs li a:hover, .light .ut-accordion-heading a:hover, .ut-custom-icon a:hover i:first-child { color:#52b9e9 !important; }.ut-portfolio-gallery-slider .flex-direction-nav a, .ut-gallery-slider .flex-direction-nav a, .ut-rotate-quote-alt .flex-direction-nav a, .ut-rotate-quote .flex-direction-nav a{ background:rgb(82,185,233);background:rgba(82,185,233, 0.85); }.light .ut-bs-wrap .entry-title a:hover, .light .ut-bs-wrap a:hover .entry-title{ color: #52b9e9; }.ut-rated i { color: #52b9e9; }.ut-footer-area ul.sidebar a:hover { color: #52b9e9; }.ut-footer-dark .ut-footer-area .widget_tag_cloud a:hover { color: #52b9e9!important; }.ut-footer-dark .ut-footer-area .widget_tag_cloud a:hover { border-color: #52b9e9; }.elastislide-wrapper nav span:hover { border-color: #52b9e9; }.elastislide-wrapper nav span:hover { color: #52b9e9; }.ut-footer-so li a:hover { border-color: #52b9e9; }.ut-footer-so li a:hover i { color: #52b9e9!important; }.js #main-content section .section-content,.js #main-content section .section-header-holder {opacity:0;}#navigation li a:hover { color:#52b9e9; }#navigation .selected,#navigation ul li.current_page_parent a.active, #navigation ul li.current-menu-ancestor a.active { color: #52b9e9; }#navigation ul li a:hover,#navigation ul.sub-menu li a:hover { color: #52b9e9; }#navigation ul.sub-menu li > a { color: #999999; }#navigation ul li.current-menu-item:not(.current_page_parent) a, #navigation ul li.current_page_item:not(.current_page_parent) a { color: #52b9e9; }#navigation ul li.current-menu-item:not(.current_page_parent) .sub-menu li a { color: #999999; }.ut-header-dark #navigation li a:hover { color:#52b9e9; }.ut-header-dark #navigation .selected,.ut-header-dark #navigation ul li.current_page_parent a.active, .ut-header-dark #navigation ul li.current-menu-ancestor a.active { color: #52b9e9; }.ut-header-dark #navigation ul li a:hover,.ut-header-dark #navigation ul.sub-menu li a:hover { color: #52b9e9; }.ut-header-dark #navigation ul.sub-menu li > a { color: #999999; }.ut-header-dark #navigation ul li.current-menu-item:not(.current_page_parent) a, .ut-header-dark #navigation ul li.current_page_item:not(.current_page_parent) a { color: #52b9e9; }.ut-header-dark #navigation ul li.current-menu-item:not(.current_page_parent) .sub-menu li a { color: #999999; }.ut-loader-overlay { background: #FFFFFF}body {font-family:Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;}h1 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h2 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h3 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h4 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h5 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }h6 { font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }.page-title{ font-family: ralewaysemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; }.ut-fancy-slider-fullwidth { height: 600px; }.ut-fancy-slider-fullwidth .hero-inner { height: 600px; }blockquote { font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif; }p.lead, .taxonomy-description { font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif; }#ut-loader-logo { background-image: url(http://dev.choosemuse.com/wp-content/uploads/2015/07/muse-dev-logo.png); background-position: center center; background-repeat: no-repeat; }.parallax-overlay-pattern.style_one { background-image: url(" http://developer.choosemuse.com/wp-content/themes/brooklyn/images/overlay-pattern.png") !important; }.parallax-overlay-pattern.style_two { background-image: url(" http://developer.choosemuse.com/wp-content/themes/brooklyn/images/overlay-pattern2.png") !important; }</style>
+<!-- Block (791) START-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49321406-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Block (791) END -->
+
+<!-- Block (672) START-->
+<style>
+
+@media screen and (max-width: 900px){
+    #home, 
+    .page,
+    .blog .post:last-child,
+    .single-post .comments-area,
+    .search-no-results #primary,
+    .search-results #primary {
+        margin-bottom: 150px !important;
+    }
+}
+
+@media screen and (min-width: 759px) and (max-width: 1100px){
+    footer .social {
+        position: relative;
+        float: right;
+        clear: right;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #primary {
+        width: 100% !important;
+    }
+    
+}
+
+@media screen and (max-width: 758px){
+    
+    .front-page-section.developer-sdk .platform-item {
+        margin-top: 20px;
+    }
+    
+    .front-slide img {
+        height: 200px;
+        width: auto !important;
+        max-width: none !important;
+    }
+    
+    .front-slide h2 {
+        top: 20% !important;
+    }
+    
+    #home, 
+    .page,
+    .blog .post:last-child,
+    .single-post .comments-area,
+    .search-no-results #primary,
+    .search-results #primary{
+        margin-bottom: 290px !important;
+    }
+    
+    .sidebar-toggle {
+        position: fixed;
+        height: 45px;
+        width: 45px;
+        background-color: grey;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        top: 80px;
+        left: 0;
+        z-index: 99;
+        cursor: pointer;
+    }
+    
+        .sidebar-toggle:before {
+            content: "\f0ca";
+            font-family: 'fontawesome';
+            color: white;
+            position: absolute;
+            top: 0;
+            font-size: 30px;
+            line-height: 45px;
+            margin-left: 6px;
+        }
+        
+    ul.sidebar .widget_search.search-3 {
+        padding-left: 50px;
+    }
+        ul.sidebar .search-3 .search-form {
+            margin: 0;
+        }
+    
+    .text-2,
+    .wpdt-pages-widget-3 {
+        padding-left: 30px;
+    }
+    
+    .footer .social {
+        position: relative;
+        clear: both;
+        display: block;
+        margin: 20px auto;
+    }
+    
+    footer.footer .more-links {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+        .more-links a {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0px !important;
+        }
+        
+    footer #mc_embed_signup {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        float: none !important;
+        width: auto;
+    }
+    
+        footer #mc_embed_signup form {
+            display: inline-block;
+        } 
+    
+    footer.footer .logo {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+    
+    footer span.ix-copyright {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .inner-content:not(.front-page-content){
+        padding: 10px;
+    }
+    
+    .push-30px { 
+        margin-left: 0 !important;
+    }
+    
+    ol.fancy {
+        margin-left: 0;
+    }
+    
+    .blog .post {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .page-id-927 .heading-background {
+        height: 330px !important;
+    }
+    
+    .blog .heading-background,
+    .single-post .heading-background {
+        height: 150px;
+        min-height: 150px;
+    }
+    
+    #mailchimp-top-bar.mctb-medium input {
+        max-width: 150px !important;
+    }
+    
+    #mailchimp-top-bar form {
+        text-align: left !important;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    #mce-EMAIL {
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #mce-EMAIL {
+        max-width: 150px !important;
+    }
+}
+
+</style>
+<!-- Block (672) END -->
+
+<!-- Block (14) START-->
+<style>
+
+.heading-background.green a {
+    color: white;
+}
+/***********************/
+/* GENERAL
+/**********************/
+
+    @font-face {
+        font-family: proximanova;
+        color: #444444;
+       /* font: 20px/22px "ralewayregular", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+        src: url('/wp-content/uploads/fonts/proximanova-regular-webfont.woff');
+    }
+    
+    body, p {
+        font-family: proximanova, Helvetica, sans-serif !important;
+        /*font: 18px/22px "ralewayregular", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+        color: #444444;
+    }
+    
+    .ut-btn {
+        font-family: proximanova;
+    }
+    
+    .ut-btn.blue {
+        background-color: #52B9E9;
+    }
+    
+    .ut-btn.round {
+        border-radius: 5px !important;
+    }
+    
+    code {
+        font-size:15px;
+    }
+    
+    blockquote {
+        text-transform: none;
+        font-size: 14px;
+        background-color: #eeeeee;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        font-family: Lato, Helvetica, sans-serif !important;
+    }
+    
+    h1 a, h2 a, h3 a, h4 a, h5 a {
+        color: #52b9e9;
+    }
+    
+    .page-id-230 h3 {
+        color: #28779D;
+    }
+    
+    .disabled a {
+        color: #dbdbdb;
+        pointer-events: none;
+        font-weight: 300 !important;
+    }
+    
+    h2,
+    h2 b{
+        font-size: 1.3em;
+        color: #28779D !important;
+    }
+    
+    .push-30px {
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    
+    h2.heading-black {
+        color: #333 !important;
+    }
+    
+    
+    .heading-background h2 {
+        color: white !important;
+    }
+    
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: normal;
+    }
+    
+    #main-content {
+        min-height: 100%;
+        padding-bottom: 189px;
+    }
+    
+    p.large {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    p:empty {
+      display: none;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+    
+    .grid-container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .grid-85 {
+        padding: 0;
+        float: right; /* because fixed position sidebar */
+    }
+    
+    .tab-icon {
+        width: 50px;
+    }
+    
+    .ut-btn.round {
+        border-radius: 7px;
+    }
+
+    .single-post .post {
+        padding-top: 50px;
+    }
+    
+.preamble {
+    background-color: #DAF9F6;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+/**************************/
+/* SIDEBAR
+/*************************/
+
+@media screen and (max-width: 767px){
+    #secondary {
+        display: none;
+    }
+}
+
+    #secondary {
+        min-width: 200px;
+        position: fixed;
+        margin: 0;
+        margin-top: 80px;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+        background-color: #4e4e4e;
+        z-index: 9;
+    }
+    
+    .home.page #secondary {
+        margin-top: 0;
+    }
+    
+    .blog #secondary {
+        padding-top: 0;
+    }
+    
+        #secondary ul.sidebar {
+            width: 100%;
+            padding: 0;
+        }
+        
+            #secondary .widget-container {
+                margin: 0;
+            }
+        
+            ul.sidebar .widget_search {
+                width: 100%;
+                display: block;
+                margin-bottom: 0;
+                padding: 10px 0;
+                background: #818183;
+            }
+            
+            ul.sidebar .search-form {
+                width: 80%;
+                margin: auto;
+            }
+            
+            ul.sidebar .search-form input.search-field {
+                margin-bottom: 0;
+                padding: 5px;
+                border-radius: 3px;
+            }
+            
+            ul.sidebar .search-form input.search-submit {
+                display: none;
+            }
+    
+    
+    #secondary .home-link,
+    .dtree {
+        color: white ;
+        font-size: 1.1em;
+    }
+    
+    .home-link-wrap {
+        margin-top: 20px;    
+    }
+        .home-link {
+            padding-left: 20px;
+            font-weight: 600;
+            color: inherit;
+        }
+        
+            .home-link img {
+                position:relative;
+                top: -3px;
+            }
+    
+    .dtNode {
+        position:relative;
+        margin: 15px 0;
+        padding-left: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .current-page,
+    #secondary .current-page .home-link {
+        color: #52B9E9;
+    }
+    
+    
+        .dtNode a {
+            color: inherit !important;
+            line-height: 1.3em;
+            margin: 3px 0;
+        }
+            .clip .clip .dtNode > a {
+                max-width: 70%;
+                display: inline-block;
+            }
+        
+            .dtNode img:not([src$="empty.gif"]) {
+              position: relative;
+              top: -2px;
+              margin-right: 10px;
+            }
+            
+            .sidebar-icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+            
+            .dtNode > a > img,
+            .dtNode > img {
+              max-width: 20px;
+            }
+
+/***********************/
+/* TOC PAGES
+/***********************/
+
+.toc-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+#toc_container.fix-toc {
+    position: fixed;
+    top: 0;
+    margin-top: 80px;
+}
+
+#toc_container p.toc_title + ul.toc_list {
+  padding-left: 30px;
+  margin-top: 2em;
+}
+
+#toc_container {
+    float: left;
+    padding: 0;
+    width: 350px !important;
+    border: 2px solid #dbdbdb;
+    border-left: 0;
+}
+    
+    #toc_container p.toc_title {
+        text-align: left;
+        background: #dbdbdb;
+        padding: 20px 10px 10px 20px;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+    
+    #toc_container span.toc_toggle {
+        float: right;
+    }
+    
+        #toc_container a {
+        color: #333;
+    }
+    
+    #toc_container ul ul li a {
+        color: #555;
+    }
+
+.toc-content {
+    max-width: 100%;
+    float:right;
+    padding: 40px 20px;
+}
+
+    @media screen and (max-width: 750px){
+        .toc-content {
+            float: none;
+        }
+        
+        #toc_container {
+            width: 100% !important;
+        }
+    }
+
+    .toc-content h2 {
+        counter-increment: step-counter;
+    }
+    
+    .toc-content h2:before {
+        content: counter(step-counter);
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        border: 2px solid;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+    
+    
+.toc-content h2,
+h3{
+    font-size: 1.1em;
+}
+
+.toc-content b {
+    color: #444;
+}
+
+.toc-step-content {
+    margin-left: 45px;
+}
+
+.toc-step-content > ul,
+.toc-step-content > ol {
+    margin-left: 20px;
+}
+
+.toc-step-content pre {
+    padding: 0;
+}
+
+/***********************/
+/* FOOTER
+/***********************/
+    
+    footer.footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 85%;
+        float: right;
+        background: #28779D;
+        color: white;
+    }
+    
+    @media screen and (max-width: 766px){
+        footer.footer {
+            width: 100%;
+        }
+    }
+    
+    footer a.toTop {
+        display: none;
+    }
+    
+    footer.footer .footer-content {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        
+        footer.footer .footer-content .grid-70 {
+            width: 100%;
+            margin: 0;
+        }
+        .footer .logo {
+            max-width: 200px;
+            float:right;
+        }
+        
+        footer.footer .more-links {
+            text-align: left;
+            position: relative;
+        }
+        
+        footer.footer .more-links a {
+            display: inline-block;
+            margin-right: 3%;
+            margin-bottom: 20px;
+            color: #52b9e9;
+            font-weight: 600;
+            line-height: 1em;
+            float: right;
+            margin-top: 30px;
+        }
+    
+    .social {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: inline-block;
+        width: 255px;
+    }        
+    
+        .social img {
+            width: 60px;
+        }
+
+
+span.ix-copyright {
+    clear: both;
+    font-weight: 600;
+    float: left;
+    margin-top: 30px;
+    color: #52b9e9;
+}
+
+.more-links {
+    clear: right;
+    float: right;
+    width: 70%;
+}
+
+/***********************/
+/* PAGE CONTENT
+/***********************/
+  
+    #primary {
+        float: right;
+        padding-bottom: 0;
+    }
+    
+    #secondary {
+        float:left;
+    }
+    
+    .inner-content {
+        padding: 50px;
+        overflow: hidden;
+    }
+    
+    
+       /*.front-page-section h2,*/
+       /*.platform-action-button {*/
+       /*     margin: 0;*/
+       /*     padding: 10px 30px;*/
+       /*     line-height: 40px;*/
+       /*     background: #28779D;*/
+       /*     border-right: 2px solid white;*/
+       /*     color: white !important;*/
+       /*     text-transform: Uppercase;*/
+       /*     font-size: 1.2em;*/
+       /* }*/
+    
+       /* .front-page-section:hover h2,*/
+       /* .platform-action-button:hover {*/
+       /*     background: #FFCB58;*/
+       /* }*/
+    
+    .blue-bar {
+        background:  #28779D;
+    }
+    
+    .blue-bar {
+        color: white !important;
+    }
+    
+    .step-heading-wrap {
+        color: #28779D;
+    }
+        .step-heading-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: 10px 50px;
+            line-height: 40px;
+            text-align: center;
+            background-color: white;
+            border-radius: 50%;
+            border: 1px solid;
+            font-size: 1.7em;
+        }
+        
+        .step-heading-wrap h3 {
+            display: inline-block;
+            font-size: 1.5em;
+            color: inherit;
+        }
+        
+        .step-content {
+            margin: 50px 50px 50px 145px;       
+        }
+    
+    table {
+        border:none;
+    }
+    
+        .tablepress .odd td {
+            background: #e8e8e8;
+        }
+        .tablepress td {
+            border: none !important;
+        }
+    
+    td {
+        border:none;
+        vertical-align:top;
+    }
+    
+    tr {
+        border:none;
+    }
+    
+    td .admonition {
+        text-align:left;
+    }
+    
+    .admonition {
+        background:#EAEAEA;
+        width:100%;
+        border:1px solid #CACACA;
+        display:inline-block;
+        overflow:hidden;
+        color: black;
+        margin:10px;
+        border-radius:5px;
+        padding:10px;
+        float:left;
+    }
+    
+        .admonition-note-weak{
+            display:inline-block;
+            padding:10px;
+            background: #28779D;
+            color: White;
+            border-radius: 0;
+            width: 100%;
+            float: none;
+            position: relative;
+            overflow: visible;
+            margin-bottom: 30px;
+        }
+        
+            .admonition-note-weak:after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 0px solid transparent;
+                border-right: 25px solid transparent;
+                border-top: 10px solid #28779D;
+                position: absolute;
+                bottom: -10px;
+                left: 10px;
+            }
+    .admonition-warning {
+        font-size: 15px;
+        background-color: rgba(251, 4, 4, 0.18);
+        padding: 10px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+.ut-nav-tabs li {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+
+    @media screen and (max-width: 450px){
+        .ut-nav-tabs li {
+          width: 100%;
+        }
+    }
+
+.ut-nav-tabs li a {
+    border-radius: 0 !important;
+    border: 2px solid #e8e8e8;
+    text-transform: capitalize;
+    line-height: 50px;
+    font-size: 1em;
+    background: #e8e8e8;
+}
+
+.ut-nav-tabs li.active a {
+    background: white;
+    color: #666;
+    border-color: #e8e8e8;
+}
+
+.ut-nav-tabs li a:hover {
+    background: white;
+    color: #666;
+    border-color: #e8e8e8;
+}
+
+.select-wrap {
+    width: 220px;
+    margin: auto;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+    div.select {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 10px 5px;
+        border: 2px solid white;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer; 
+    }
+    
+        .select.open {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    
+        .select .chevron.bottom {
+            position: absolute;
+            right: 10px;
+            top: 33%;
+        }
+        
+        .chevron:before {
+            border-style: solid;
+            border-width: 0.20em 0.20em 0 0;
+            content: '';
+            display: inline-block;
+            height: 0.8em;
+            left: 0.35em;
+            position: relative;
+            top: 0.15em;
+            transform: rotate(-45deg);
+            vertical-align: top;
+            width: 0.85em;
+            color: white;
+            margin-right: 10px;
+        }
+        
+        .chevron.bottom:before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+        
+        .select-wrap .select-dropdown {
+            display:none;
+            list-style-type:none;
+            background: #818182;
+            border: 2px solid white;
+            border-top: 0;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+            .select-wrap .select-dropdown img {
+                height: 30px;
+                margin: 10px 0;
+            }
+        
+            .select-wrap .select-dropdown a {
+                display: block;
+                line-height: 45px;
+                color: white;
+            }
+            
+                .select-wrap .select-dropdown a:hover {
+                    background: #52B9E9;
+                }
+    
+ol.fancy {
+    list-style-type: none !important;
+}
+        
+    ol.fancy > li {
+        counter-increment: step-counter;
+    }
+    
+        ol.fancy > li:before {
+            content: counter(step-counter);     margin-right: 5px;     font-size: 80%;          
+            color: #28779D;     font-weight: bold;    
+            border-radius: 50%;
+            border: 2px solid;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            text-align: center;
+            line-height: 22px;
+        }
+        
+            ol.fancy > li > .fancy-content{
+              margin-left: 45px;
+            }
+            
+            .fancy-content img,
+            .toc-step-content img{
+                margin-bottom: 30px;
+            }
+            
+            ol.fancy > li > h3 {
+                display: inline-block;
+                color: #28779D;
+                text-transform: none !important;
+                position: relative;
+                top: 3px;
+                margin-left: 10px;
+            }
+            
+         
+        
+/*************************************************************/
+/* FAQ
+/*************************************************************/
+
+.ut-accordion-heading a.active {
+    border-color: #28779D;
+    background-color: #28779D;
+}
+
+.ut-accordion-heading a.active:hover {
+    border-color: #28779D;   background-color: #28779D;
+}
+
+.ut-accordion-heading a:hover {
+    border-color: #28779D;
+    color: #28779D;
+}
+
+/*************************************************************/
+/* BIG PRETTY ICONS
+/*************************************************************/
+
+.pretty-icon-wrap {
+    max-width: 320px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    color: #666;
+}
+
+    .pretty-icon-wrap img {
+        height: 116px;
+    }
+    .pretty-icon-wrap img[src=""] {
+        display: none;
+    }
+    
+    .pretty-icon-wrap a {
+      color: inherit;
+    }
+    
+    .bookend {
+        position: relative;
+        margin: 10px 0;
+        height: 50px;
+        border-right: 5px solid;
+        border-left: 5px solid;
+        border-radius: 4px;
+        font-size: 1.7em;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+        .bookend:hover {
+            color: white;
+            cursor: pointer;
+        }
+        
+        .bookend > div {
+            position: absolute;
+            margin: auto;
+            max-height: 50px;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    
+    .bookend-blue {
+        border-color: #52b9e9;
+    }
+    
+        .bookend-blue:hover {
+            background-color: #52b9e9;
+        }
+    
+    .bookend-purple {
+        border-color: #7275B7;
+    }
+    
+        .bookend-purple:hover {
+            background-color: #7275B7;
+        }
+        
+    .bookend-green {
+        border-color: #00B098;
+    }
+        .bookend-green:hover {
+            background-color: #00B098;
+        }
+        
+    .bookend-red {
+        border-color: #E82C2A;
+    }
+        
+        .bookend-red:hover {
+            background-color: #E82C2A;
+        }
+    
+    .bookend-orange {
+        border-color: #EA6A20;
+    }
+    
+        .bookend-orange:hover {
+            background-color: #EA6A20;
+        }
+    
+    .subheading {
+        width: 90%;
+        margin: auto;
+    }
+    
+/*************************************************/
+/* CALENDAR
+/*************************************************/
+
+.gce-navbar {
+    height: 60px;
+    position: relative;
+    background: #e8e8e8;
+}
+    
+    .gce-month-title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 2em;
+        font-weight: 300;
+    }
+    
+    .gce-today {
+        background-color: #00B098 !important;
+        color: white !important;
+    }
+    
+    .gce-has-events {
+        color: #00B098 !important;
+        background-color: White  !important;
+        background-image: url(//storage.googleapis.com/ix_choosemuse/uploads/dev-site/ic_events_green_40px.svg);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: 95% 10%;
+    }
+    
+        @media screen and (max-width: 1025px){
+            .gce-has-events {
+                background-image: none;
+            }
+        }
+    
+    .gce-prev, 
+    .gce-next {
+            position: absolute;
+            height: 25px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 9;
+    }
+    
+    .gce-prev {
+        left: 0;
+    }
+    
+    .gce-next {
+        right: 0;
+    }
+        
+        .gce-next a:after {
+            content: '';
+            border-top: 8px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 15px solid #52b9e9;
+            height: 0;
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            margin-left: 10px;
+        }
+        .gce-prev a:before {
+          content: '';
+          border-top: 8px solid transparent;
+          border-right: 15px solid #52b9e9;
+          border-bottom: 8px solid transparent;
+          border-left: 15px solid transparent;
+          height: 0;
+          display: inline-block;
+          position: relative;
+          top: 3px;
+          margin-right: 10px;
+          transition: all .3s ease-in;
+        }
+        
+        .gce-prev a:hover:before {
+            border-right-color: black;
+        }
+        .gce-next a:hover:after {
+            border-left-color: black;
+        }
+        
+/*********************************************/
+/* FEATURED PROJECTS
+/*********************************************/
+
+.featured-projects .listing-item .content-wrap,
+.featured-projects .listing-item .content-wrap .post-title {
+    background-color: rgba(78,78,78,.5);
+    color: white;
+    overflow: hidden;
+}
+
+.featured-projects .post-title {
+    padding: 25px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+.featured-projects .post-excerpt {
+    padding: 20px;
+}
+
+.featured-projects .ut-btn {
+    float: right;
+}
+
+.featured-projects {
+    padding:  0 30px;
+}
+
+.featured-projects .listing-item {
+    margin:  50px 0;
+    list-style-type: none;
+}
+
+.featured-projects .date-wrap {
+    margin-bottom:  10px;
+}
+
+.featured-projects .date {
+    font-size:  1.9em;
+    color: #555;
+}
+
+#main-content .nf-modal {
+    z-index:99999 !important;
+}
+
+.ut-btn.transparent a.nf-modal-link {
+  color: white;
+}
+
+/****************************************/
+
+iframe#docs {
+    min-height: 700px;
+}
+
+a.open-new-tab {
+  color: #333;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+    a.open-new-tab::after {
+      content: ' \f124';
+      font-family: fontawesome;
+    }
+    
+/*****************************************/
+/* BLOG                                  */
+/*****************************************/
+    
+.blog .heading-background {
+  margin-bottom: 50px;
+}
+
+.blog .post {
+    margin-right: 50px;
+}
+
+.single-post .post {
+  padding: 50px 50px 0 0;
+}
+
+    @media screen and (max-width: 758px){
+        .single-post .post {
+            padding: 30px;
+        }
+    }
+
+#comments {
+  padding: 0 4%;
+}
+
+/***************************************/
+
+.search-results #nav-below {
+    width: 90%;
+    margin: auto;
+}
+
+.search-results #primary {
+    padding: 120px 20px 20px;
+}
+
+.search-no-results #primary{
+    padding-top: 130px;
+}
+
+/********* MASONRY LAYOUT **************/
+.wmle_post_title a {
+    font-size: 2em;
+}
+
+.wmle_post_excerpt p {
+    font-size: 1.3em;
+}
+
+.wmle_post_meta {
+    height: 0;
+    visibility: hidden;
+    margin-bottom: 10px;
+}
+
+</style>
+<!-- Block (14) END -->
+
+<!-- Block (144) START-->
+<style type="text/css">
+#primary {
+    padding-top: 80px;
+}
+
+header.page-header {
+    display: none;
+}
+
+.grid-100 {
+    padding: 0;
+}
+
+.heading-background {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 250px;
+    overflow: visible;
+    background-size: cover;
+    padding: 50px;
+    padding-top: 70px;
+    text-align: center;
+    z-index: 9;
+}
+
+/* Android */
+.page-id-698 .heading-background,
+.page-id-967 .heading-background,
+.page-id-969 .heading-background,
+.page-id-517 .heading-background{
+    height: auto;
+}
+
+.page-id-927 .heading-background,
+.page-id-698 .heading-background,
+.page-id-700 .heading-background,
+.page-id-5411 .heading-background
+{
+    padding-top: 50px;
+}
+    @media screen and (max-width: 500px){
+        .heading-background {
+            padding: 20px !important;
+        }
+        /* Featured Projects and MusePlayer needs extra height */
+         .page-id-5411 .heading-background,
+         .page-id-150 .heading-background{
+             min-height: 310px;
+         }
+    }
+    
+    @media screen and (max-width: 375px){
+        /* Featured Projects needs extra height */
+         .page-id-5411 .heading-background,
+         .page-id-150 .heading-background{
+             min-height: 390px;
+         }
+    }
+
+    .heading-background.blue {
+        background-image: url('//storage.googleapis.com/ix_choosemuse/uploads/dev-site/Banner%20Images/img_header_blue_1300x360%20(1).jpg');
+        background-color: #7AC4ED;
+    }
+    
+    .heading-background.orange {
+        background-image: url('https://storage.googleapis.com/ix_choosemuse/uploads/dev-site/Banner%20Images/img_header_orange_1300x360.jpg');
+        background-color: #F29B65;
+    }
+    
+    .heading-background.green {
+        background-image: url('https://storage.googleapis.com/ix_choosemuse/uploads/dev-site/Banner%20Images/img_header_green_1300x360.jpg');
+        background-color: #3ABDAA;
+    }
+    
+    .heading-background.purple {
+        background-image: url('https://storage.googleapis.com/ix_choosemuse/uploads/dev-site/Banner%20Images/img_header_purple_1300x360.jpg');
+        background-color: #8889C3;
+    }
+    
+    .heading-background.yellow {
+        background-image: url('https://storage.googleapis.com/ix_choosemuse/uploads/dev-site/Banner%20Images/img_header_yellow_1300x360.jpg');
+        background-color: #FFDD98;
+    }
+    
+    
+        .heading-background h2 {
+            font-size: 3em;
+            line-height: 1.3em;
+            color: white;
+        }
+        
+        .heading-background h3.subheading {
+            font-size: 1.3em;
+            color: white;
+            max-width: 500px;
+            margin: auto;
+        }
+        
+        .heading-background img {
+            width: 50px;
+            height: 50px;
+            border: none;
+            margin-right: 10px;
+        }
+        
+        .heading-background .ut-btn.transparent {
+            display: inline-block;
+            border: 2px solid white;
+            padding: 10px 55px;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            margin: 20px 15px 0;
+        }
+        
+            .page-id-5411 .heading-background .ut-btn.transparent {
+                padding: 15px 25px;
+            }
+    
+        .heading-background .ut-btn.solid.small {
+            display: inline-block;
+            background: #5BE3BA;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px 30px;
+            font-size: 1.0em;
+            text-transform: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right:20px;
+        }
+        
+    a.ut-btn.solid.small:hover {
+        background: #04D697;
+    }
+    
+    @media screen and (min-width 758px){
+        .ut-one-third {
+          width: 32.66%;
+          margin-right: 1%;
+        }
+    }
+    
+    .ut-column-last {
+        margin-right:0;
+    }
+    
+        a.platform-action-button {
+          display: block;
+          font-weight: bold;
+          text-align: center;
+          text-transform: none;
+          background-color: #28779D;
+          border-right: 0;
+          color: white !important;
+        }
+        
+.header-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(35,100,88,.6);
+  font-size: 18px;
+  color: #e8e8e8;
+}
+
+.header-bar a {
+  color: #7dc6ec;
+}
+</style>
+<!-- Block (144) END -->
+
+<!-- Block (5) START-->
+<style>
+
+.owl-wrapper {
+    max-width: 100%;
+}
+
+    .owl-item {
+        min-width: 100%;
+    }
+
+/* TEMPORARY */
+.owl-item {
+    max-height: 300px;
+}
+
+
+.front-slide {
+    position: relative;
+}
+.front-slide h2 strong {
+    color: white;
+}
+
+.home.page .front-slide h2 {
+    position: absolute;
+    width: 100%;
+    top: 33%;   
+    font-size: 4em;
+}
+
+@media screen and (max-width: 900px){
+    .home.page .front-slide h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .home.page .front-slide h2 {
+        font-size: 2.5em;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .home.page .front-slide h2 {
+        top: 5%;
+    }
+}
+
+.home.page .section-header-holder {
+    display: none;
+}
+
+    
+.home.page h2 {
+    font-size: 1.7em;
+    color: white !important;
+}
+
+.front-page-section .inner-content {
+    box-sizing: content-box;
+    padding: 30px 0;
+    min-height: 220px; /* temporary */
+}
+
+    .front-page-section.middle-section .inner-content {
+        padding: 30px 15%;
+    }
+
+.border-right {
+    border-right: 2px solid #d8d8d8;
+}
+
+        .front-page-section h2 img {
+            width: auto;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .front-page-section h2 span {
+            display: block;
+            font-size: 13px;
+            margin-left: 50px;
+            margin-top: -10px;
+            line-height: 13px;
+            text-transform: none;
+        }
+        
+    .front-page-section .title-bar {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      border-right: white 2px solid;
+      overflow: hidden;
+    }
+    
+        .front-page-section .title-bar.purple {
+            background-color: #7275B7;
+        }
+        
+        .front-page-section .title-bar.fuscia {
+            background-color: #D40E8C;
+        }
+        
+        .front-page-section .title-bar.orange {
+            background-color: #EA6A20;
+        }
+        
+        .front-page-section .title-bar.red {
+            background-color: #E82C2A;
+        }
+        
+        .front-page-section .title-bar.yellow {
+            background-color: #FFCB58;
+        }
+        
+        .front-page-section .title-bar.green {
+            background-color: #00B098;
+        }
+    
+    
+.title-text {
+   padding-left: 15px;
+   display: inline-block;
+}
+
+    /*.front-page-section .title-bar h2 {*/
+    /*  color: white;*/
+    /*  margin-bottom: 0px;*/
+    /*  display: inline-block;*/
+    /*  line-height: 0px;*/
+    /*}*/
+
+    /*.front-page-section .title-bar h3 {*/
+    /*  margin-bottom: 0px;*/
+    /*  color: white;*/
+    /*}*/
+    .research-tools p {
+      margin-bottom: 0;
+    }
+    
+    .research-tools li img {
+        height: 70px;
+    }
+    
+    
+        .front-page-section .title-bar img {
+          margin-left: 15px;
+          height: 40px;
+          float: left;
+          width: auto;
+        }
+        
+        .front-page-section .title-bar h2 {
+          color: white;
+          margin-top: 10px;
+          display: inline-block;
+          line-height: 0px;
+        }
+            .front-page-section .title-bar h2:only-child{
+              line-height: 15px;
+            }
+        
+        .front-page-section .title-bar h3 {
+          margin-bottom: 0px;
+          font-size: 13px;
+          color: white;
+        }
+        
+    .front-page-section li {
+        display:inline-block;
+    }
+    
+        .front-page-section a {
+            font-weight: 600;
+            font-size: 10pt;
+        }
+        
+        .front-page-section .ut-btn {
+            min-width: 170px;
+            margin: 20px 10px 0;
+            font-size: 1.1em;
+            line-height: 2px;
+            padding: 25px 0;
+        }
+    
+    .front-page-section .platform-item {
+        margin: 0 22px;
+        text-align: center;
+    }
+    
+        @media screen and (max-width: 1500px){
+            .front-page-section .platform-item {
+                margin: 0 11px;
+            }    
+        }
+    
+        .front-page-section li img  {
+            width: 97px;
+            margin-bottom: 15px;
+            height: auto;
+        }
+        
+    .featured-project-section {
+        background-image: url('//dev.choosemuse.com/wp-content/uploads/2015/08/neuraldrift_banner.jpg');
+        background-size: cover;
+    }
+    
+        .featured-project-section .front-page-section,
+        .featured-project-section .front-page-section .title-bar{
+            background-color: rgba(78,78,78,.5);
+            border-right: none;
+        }
+        
+        .featured-project-section .inner-content {
+            padding: 30px;
+            overflow: hidden;
+            color: white;
+        }
+        
+        .featured-project-section h4 {
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        .featured-project-section p {
+            color: white;
+        }
+        
+        .featured-project-section .ut-btn {
+            float: right;
+            margin-top: 0;
+        }
+        
+        .featured-project-section .extra-info {
+            line-height: 50px;   
+            display: inline-block;
+        }
+    
+        .featured-project-section br {
+          display: none; /* F wordpress */
+        }
+        
+        
+@media screen and (min-width:766px){
+    .front-page-section {
+        margin: 0;
+    }
+    
+    .ut-one-third.front-page-section {
+        width: 33.33%;
+    }
+    
+    .ut-two-thirds.front-page-section {
+        width: 66.66%;
+    }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1340px){
+    .developer-sdk {
+        width: 60% !important;
+    }
+    
+    .research-tools {
+        width: 40% !important; 
+    }
+}
+
+@media screen and (max-width: 1249px){
+    .developer-sdk,
+    .research-tools {
+        width: 100% !important;
+    }
+    
+    .front-page-section .platform-item {
+        margin: 0 34px;
+    }
+}
+
+@media screen and (max-width:1075px){
+    .front-page-section .platform-item {
+        margin: 0 25px;
+    }
+}
+
+
+@media screen and (max-width:975px){
+    .front-page-section .platform-item {
+        margin: 0 13px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .front-page-section .platform-item {
+        margin: 0 6px;
+    }
+}
+    .front-page-section .rss-output {
+        padding: 0;
+        position: relative;
+        margin-bottom: 4px;
+    }
+    
+        .rss-output:before {
+            content: ".";
+            position: absolute;
+            left: -11px;
+            top: -2px;
+            font-size: 2em;
+            line-height: 13px;
+            color: #52b9e9;
+        }
+        
+        .rss-output .date, .rss-output .source {
+            display: none;
+        }
+
+        .rss-output br {
+            display: none;
+        }   
+       
+    .event-list,
+    .blog-list {
+        color: grey;
+    }
+    
+    .gce-page-list .gce-list div span.blue,
+    span.blue
+    {
+        color: #52b9e9;
+    }
+</style>
+<!-- Block (5) END -->
+
+<!-- Block (1) START-->
+<style type="text/css">
+/* With some changes.... */
+
+/*****************************************************/
+/* NAVIGATION */
+/****************************************************/
+
+#navigation {
+  font-family: 'Lato', Helvetica, sans-serif;
+}
+.site-logo {
+  z-index: 100;
+}
+#navigation ul li {
+  margin: 0 10px;
+}
+
+#navigation ul li.menu-more {
+  overflow: visible
+}
+#navigation > ul > li > a {
+    position: relative;
+    top: 32px;
+    height: 80px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 1.4em;
+    white-space: normal;
+}
+
+#navigation .ut-btn {
+  max-width: 170px;
+  margin-right: 20px !important;
+}
+.ut-btn .guarantee {
+  font-size: 0.6em;
+  position: relative;
+  top: -2px;
+  line-height: 1.2em;
+  color: rgb(255, 180, 180);
+}
+
+
+@media screen and (max-width:1024px){
+  .shipping-callout {
+    display: none;
+  }
+}
+
+
+.ha-header:not(.ha-header-hide) .shipping-callout {
+  height: 125px;
+}
+
+.shipping-callout .red-big {
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    clear: none;
+    color: #d72a35;
+    line-height: 1.2em;
+}
+
+.shipping-callout .yellow-small {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    color: white;
+    text-transform: none;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+#navigation ul li.order-now-menu-btn,
+#ut-mobile-nav ul li.order-now-menu-btn {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    padding: 0 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #d72a35 !important;
+    overflow: visible;
+}
+
+#navigation ul li.order-now-menu-btn,
+#ut-mobile-nav ul li.order-now-menu-btn {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    padding: 0 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: lato;
+    
+}
+
+#navigation ul li.order-now-menu-btn {
+    left: 10px;
+    font-size: 1.3em;
+    height: 60px;
+    font-family: lato;
+}
+#ut-mobile-nav ul li.order-now-menu-btn {
+    left: 30px;
+    font-size: 1.3em;
+    height: 60px;
+}
+#navigation ul li.order-now-menu-btn a,
+#ut-mobile-nav ul li.order-now-menu-btn a {
+    font-size: 0.9em;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+#navigation ul li.order-now-menu-btn a{
+    top: 8px;
+}
+
+#ut-mobile-nav .order-now-menu-btn {
+  max-width: 170px;
+}
+#ut-mobile-nav .order-now-menu-btn .guarantee {
+  position: relative;
+  top: -13px;
+}
+#navigation ul li a:after,
+#ut-mobile-nav ul li a:after {
+    display: none;
+}
+
+#navigation ul.sub-menu li > a {
+    color: #999999;
+    letter-spacing: 0.13em;
+    background: #7d7d7d;
+    color: white !important;
+    opacity: 0.91;
+}
+
+#navigation ul.sub-menu li > a:hover {
+    background: #5caae6;
+    color: white;
+    opacity: 1;
+}
+
+.ut-footer-area .widget_recent_entries li a {
+    display: inline-block;
+    font-weight: 500;
+    color: #777;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+span.post-date {
+    display: block;
+}
+.ut-footer-area .widget-title {
+    text-transform: none;
+    font-size: 1.7em;
+}
+
+.ut-accordion-heading a {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.ut-accordion-heading a, .ut-accordion-body, .ut-nav-tabs li a{
+  color: #666;
+}
+.ut-accordion-heading a, .ut-nav-tabs li a {
+  border-radius: 7px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+</style>
+<!-- Block (1) END -->
+<style type="text/css">.mc4wp-form input[name="_mc4wp_required_but_not_really"] { display: none !important; }</style><style type="text/css">#mailchimp-top-bar .mctb-bar, .mctb-response { background: #28779d; }#mailchimp-top-bar label { color: #222222; }#mailchimp-top-bar .mctb-button { background: #d72a35; border-color: #d72a35; }#mailchimp-top-bar .mctb-email:focus { border-color: #d72a35; }#mailchimp-top-bar .mctb-button { color: #ffffff; }</style>    
+<link rel="stylesheet" type="text/css" href="./Getting Started - Muse Developers_files/prettify.css"><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+
+<body id="ut-sitebody" class="page page-id-196 page-child parent-pageid-927 page-template-default" data-scrolleffect="easeInOutExpo" data-scrollspeed="650" style="padding-top: 39px;">
+
+<a class="ut-offset-anchor" id="top" style="top:0px !important;"></a>
+
+
+
+
+ 
+
+
+
+<!-- header section -->
+<header id="header-section" class="ha-header centered ut-header-light " style="margin-top: 40px;">
+    
+        
+    <div class="grid-container">
+    
+		
+        
+        <div class="ha-header-perspective">
+        	<div class="ha-header-front">
+            	
+                <div class="grid-20 tablet-grid-50 mobile-grid-50 ">
+                
+					                        
+                                                                        
+                        <div class="site-logo">
+                            <a href="http://developer.choosemuse.com/" title="Muse Developers" rel="home"><img data-altlogo="http://dev.choosemuse.com/wp-content/uploads/2015/07/muse-dev-logo.png" src="./Getting Started - Muse Developers_files/muse-dev-logo.png" alt="Muse Developers"></a>
+                        </div>
+                        
+                                 	
+                
+                </div>    
+                
+                                	
+					<nav id="navigation" class="grid-80 hide-on-tablet hide-on-mobile "><ul id="menu-menu-1" class="menu sf-js-enabled sf-arrows"><li class="menu-item menu-item-type-post_type menu-item-object-page external"><a href="http://developer.choosemuse.com/#section-home" class="external">Home</a></li>
+<li class="forum-link menu-item menu-item-type-custom menu-item-object-custom external"><a href="http://forum.choosemuse.com/" class="external" target="_blank">Forum</a></li>
+<li class="order-now-menu-btn ut-btn medium red shopify-link menu-item menu-item-type-custom menu-item-object-custom external"><a href="http://store.choosemuse.com/products/muse" class="external">Buy Now <div class="guarantee">60 day money back guarantee</div></a></li>
+</ul></nav>                    
+                    <div class="ut-mm-trigger tablet-grid-50 mobile-grid-50 hide-on-desktop">
+                    	<button class="ut-mm-button"></button>
+                    </div>
+                    
+					<nav id="ut-mobile-nav" class="ut-mobile-menu mobile-grid-100 tablet-grid-100 hide-on-desktop" style="width: 1923px; height: 935px; display: none;"><div class="ut-scroll-pane" style="width: 1920px; height: 935px;"><ul id="ut-mobile-menu" class="ut-mobile-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page external"><a href="http://developer.choosemuse.com/#section-home" class="external">Home</a></li>
+<li class="forum-link menu-item menu-item-type-custom menu-item-object-custom external"><a href="http://forum.choosemuse.com/" class="external" target="_blank">Forum</a></li>
+<li class="order-now-menu-btn ut-btn medium red shopify-link menu-item menu-item-type-custom menu-item-object-custom external last"><a href="http://store.choosemuse.com/products/muse" class="external">Buy Now <div class="guarantee">60 day money back guarantee</div></a></li>
+</ul></div></nav>                                        
+                                                                        
+                </div>
+            </div><!-- close .ha-header-perspective -->
+    
+	        
+	
+    </div> 
+    
+        
+</header><div class="sidebar-toggle" style="top: 120px;"></div><!-- close header -->
+
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+
+
+<div id="main-content" class="wrap ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+	
+    <a class="ut-offset-anchor" id="to-main-content"></a>
+		
+        <div class="main-content-background">		
+        <div class="grid-container">
+        	
+                        
+            <div id="primary" class="grid-parent grid-85 tablet-grid-85 mobile-grid-100" style="width: 1618px;">
+            
+			
+				
+<div id="post-196" class="post-196 page type-page status-publish has-post-thumbnail hentry category-manual">
+
+	<div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+		<header class="page-header pt-style-2">
+            <h1 class="page-title"><span>Getting Started</span></h1> 
+                            
+            <div class="entry-meta">
+                            </div>                                  
+		</header><!-- .page-header -->
+    </div>
+	
+    <div class="grid-100 mobile-grid-100 tablet-grid-100">
+    <div class="entry-content clearfix">	
+        <style>
+ol.fancy {
+margin-left: 0;
+}
+</style>
+<div class="heading-background purple">
+<h2><img src="./Getting Started - Muse Developers_files/ic_research_white_16.svg" alt="research tools">Research Tools | Getting Started</h2>
+<p><style type="text/css"></style><span id="csmi-83f2a8ae4542ffdc3f1597803ccd684c" class="csmi csmi-bid-516 csmi-Research Tools Download Link"></span></p><div class="select-wrap">
+<div class="select open">Download
+<span class="chevron bottom"></span>
+</div>
+<ul class="select-dropdown" style="display: block;">
+<li><a href="https://storage.googleapis.com/ix_downloads/musesdk-3.4.1/musesdk-3.4.1-osx-installer.app.zip"><img src="./Getting Started - Muse Developers_files/ic_mac_white_30px.svg" alt="mac">MAC</a></li>
+<li><a href="https://storage.googleapis.com/ix_downloads/musesdk-3.4.1/musesdk-3.4.1-windows-installer.exe"><img src="./Getting Started - Muse Developers_files/ic_windows_white_30px.svg" alt="windows">WINDOWS</a></li>
+<li><a href="https://storage.googleapis.com/ix_downloads/musesdk-3.4.1/musesdk-3.4.1-linux-installer.run"><img src="./Getting Started - Muse Developers_files/ic_linux_white_30px.svg" alt="linux">LINUX</a></li>
+</ul></div>
+
+<style>
+.select-wrap {
+    margin-top: 20px;
+    overflow: visible;
+    height: 41px;
+    position: relative;
+}
+
+.heading-background {
+    height: 280px;
+    z-index: 9;
+}
+</style><br>
+<style type="text/css"></style><span id="csmi-03fafbad120094261f769b8ce7e39571" class="csmi csmi-bid-848 csmi-outdated page - research tools"><div class="extra-message">NOTE: The research tools are compatible with the Muse 2014 headband. Contact customercare@choosemuse.com for purchase.  Support for the <a href="http://developer.choosemuse.com/hardware-firmware/hardware-specifications">Muse 2016</a> headband is coming soon.</div></span><p></p></div>
+<div class="inner-content">
+<h2>Introduction</h2>
+<p> Using the Muse Research Tools works like this: </p>
+<ol>
+<li>Pair your device with Muse.
+</li><li>Run MuseIO to connect to Muse.
+</li><li>Receive Muse data via OSC in another program like MuseLab or MusePlayer.
+</li></ol>
+<p>So! Let’s get started:</p>
+<ol class="fancy">
+<li>
+<h3>Install the Research Tools</h3>
+<div class="fancy-content">Download and install the Muse Research Tools. The installer includes MuseIO, MuseLab, and MusePlayer.<p></p>
+<p>On OS X, everything will be installed in <code class=" prettyprinted"><span class="str">/Applications/</span><span class="typ">Muse</span></code>. NOTE: your bash_profile will be modified to add this directory to your PATH. If you are using another shell such as zsh, you will have to modify the appropriate configuration file yourself.</p>
+<p>On Windows, everything will be installed in <code class=" prettyprinted"><span class="typ">Program</span><span class="pln"> </span><span class="typ">Files</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x86</span><span class="pun">)/</span><span class="typ">Muse</span></code>.</p>
+<p>On Linux, everything will be installed in <code class=" prettyprinted"><span class="pln">$HOME</span></code>.</p>
+</div>
+</li>
+<li>
+<h3>Pair Muse with your computer</h3>
+<div class="fancy-content">
+<p>Put Muse into Pairing Mode by holding the button down for five seconds until all five LEDs begin flashing on and off in unison. Release the button.</p>
+<p>Open the Bluetooth devices menu on your system. With Bluetooth turned on and your computer discoverable, wait for Muse to appear in the list of available devices. When it does, click on it and ask to pair. If you are prompted with a passcode request, accept it. Wait for the pairing process to complete. Once paired, all five LEDs will continue to flash on and off. This will only change once a streaming connection is established. </p>
+<p>NOTE: On some systems, when pairing, Muse will show that it is “Connected”, and then after a few seconds “Disconnected”. This is normal. Pairing is not the same as connecting. Muse will only show as permanently “Connected” once a program connects to it to stream data. More on that soon.</p>
+</div>
+</li><li>
+<h3>Run MuseIO</h3>
+<div class="fancy-content">
+<p>Make sure your Muse is paired and turned on. </p>
+<p><!-- WINDOWS INSTRUCTIONS --></p>
+<div class="ut-one-half  ">
+<p>Open a Terminal or Command Prompt and enter the following command:
+</p><pre class=" prettyprinted"><span class="pln">muse</span><span class="pun">-</span><span class="pln">io </span><span class="pun">--</span><span class="pln">device MUSE_DEVICE_NAME</span></pre>
+<p> where MUSE_DEVICE_NAME is the name of the Muse device you previously paired. If you have the <a href="http://dev.choosemuse.com/hardware-firmware/firmware-versions" title="Firmware Versions">latest firmware</a>, this will be something like “Muse-1234″. </p>
+<p>MuseIO will begin searching for your Muse and then attempt to connect with it. This may take up to 30 seconds. </p>
+<p>Congratulations! MuseIO is now connected to Muse and is sending out OSC messages containing Muse data to the default TCP port 5000.</p>
+<p>NOTE: Don’t worry about that “OSC error 61″ / “TCP connection failure”. It just means that nothing is receiving the messages that MuseIO is sending out. That’s what MuseLab will do when we start it.<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<p><a href="./Getting Started - Muse Developers_files/run_museio_mac.gif"><img src="./Getting Started - Muse Developers_files/run_museio_mac.gif" alt="run_museio_mac" width="564" height="774" class="alignnone size-full wp-image-3415"></a><br>
+</p></div><div class="clear"></div>
+</div>
+</li>
+<li>
+<h3>Start MuseLab receiving on port 5000</h3>
+<div class="fancy-content">
+<div class="ut-one-half  ">
+<p>On Mac, with the Finder, navigate to <code class=" prettyprinted"><span class="str">/Applications/</span><span class="typ">Muse</span></code>. &nbsp;Double click on the MuseLab icon.</p>
+<p>On Windows, navigate to <code class=" prettyprinted"><span class="pln">C</span><span class="pun">:</span><span class="pln">\Program </span><span class="typ">Files</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x86</span><span class="pun">)</span><span class="pln">\M</span><span class="kwd">use</span></code>. Double click on the MuseLab icon.</p>
+<p>In the Opened Ports text box, enter <b>5000</b> and Click <b>Open Port</b>. <!-- ADD NOTE ABOUT INVALID PORT WARNING AND  TRYING DIFFERENT PORTS IF 5000 IS BAD --><br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/open_port_5000.png"><img src="./Getting Started - Muse Developers_files/open_port_5000.png" alt="open_port_5000" width="321" height="291" class="alignnone size-full wp-image-3430"></a><br>
+</div><div class="clear"></div>
+<div class="ut-one-half  ">
+<p>You should see the incoming messages listed below a few seconds later.<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/see_incoming_messages.png"><img src="./Getting Started - Muse Developers_files/see_incoming_messages.png" alt="see_incoming_messages" width="315" height="606" class="alignnone size-full wp-image-3435"></a><br>
+</div><div class="clear"></div>
+</div>
+</li>
+<li>
+<h3>Create a Scrolling Line Graph</h3>
+<div class="fancy-content">
+<div class="ut-one-half  ">
+<p>Click on the dropdown menu in the sidebar and select <b>Visualizers</b>.</p>
+<p>Click on <b>New…</b>, select <b>Scrolling Line Graph</b>, and click <b>Finish</b>.<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/click_new_visualizer.png"><img src="./Getting Started - Muse Developers_files/click_new_visualizer.png" alt="click_new_visualizer" width="320" height="286" class="alignnone size-full wp-image-3446"></a><br>
+</div><div class="clear"></div>
+<div class="ut-one-half  ">
+<p>The sidebar will then display a list of all the data streams available for plotting on this new graph.<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/see_signal_groups.png"><img src="./Getting Started - Muse Developers_files/see_signal_groups.png" alt="see_signal_groups" width="176" height="400" class="alignnone size-full wp-image-3447"></a><br>
+</div><div class="clear"></div>
+<div class="ut-one-half  ">
+<p>Click on <b>Settings</b> and change the name of the graph to <b>EEG</b>.<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/label_eeg_graph.png"><img src="./Getting Started - Muse Developers_files/label_eeg_graph.png" alt="label_eeg_graph" width="319" height="167" class="alignnone size-full wp-image-3508"></a><br>
+</div><div class="clear"></div>
+</div>
+</li>
+<li>
+<h3>Add Muse data streams to the graph</h3>
+<div class="fancy-content">
+<div class="ut-one-half  ">
+<p>In the <b>Signal Group Options</b> box, check the <b>Draw</b> box for <b>/muse/eeg/raw</b>.</p>
+<p>Live EEG data will start to be plotted. Click on the plot area and use the up arrow key to zoom into the graph <!-- FOOTNOTE --> The default graph scale is zoomed far out, so the EEG data will look small at first. Note the occasional large spikes in the waveforms – those are blinks. Go ahead, try a blink or two!<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/basic_eeg_blink1.gif"><img src="./Getting Started - Muse Developers_files/basic_eeg_blink1.gif" alt="basic_eeg_blink" width="1300" height="873" class="alignnone size-full wp-image-3513"></a><br>
+</div><div class="clear"></div>
+</div>
+</li>
+<li>
+<h3>Add graphs for accelerometer and alpha session scores</h3>
+<div class="fancy-content">
+<div class="ut-one-half  ">
+<p>Now repeat the same process as above but with <!-- TODO ADD LINKS TO DOXYGEN --> <b><a href="http://developer.choosemuse.com/research-tools/getting-started">/muse/acc</a></b> and <b><a href="http://developer.choosemuse.com/research-tools/getting-started">/muse/elements/alpha_session_score</a></b>:</p>
+<ul>
+<li>Create a new <b>Scrolling Line Graph</b>
+</li><li>Rename it
+</li><li>Add the appropriate data stream
+</li></ul>
+<p>
+</p><p>Make sure to click on each graph and use the up/down arrows to scale it up or down to a point where you can easily see changes in it. For example, <b>/muse/elements/alpha_session_score</b> <!-- FOOTNOTE --> To play around with the session scores, try closing your eyes and relaxing for about ten seconds, then open your eyes. You should see the scores increase when you closed your eyes and decrease shortly after you opened them. <!-- FOOTNOTE --> ranges from 0 to 1, so make sure the scale (displayed in the top right corner of each graph) is appropriate (it starts way out at 5000 units/division).</p>
+<p> You should end up with something like the example on the right.</p>
+</div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/eeg_acc_alpha2.gif"><img src="./Getting Started - Muse Developers_files/eeg_acc_alpha2.gif" alt="eeg_acc_alpha" width="789" height="539" class="alignnone size-full wp-image-3519"></a><br>
+</div><div class="clear"></div>
+</div>
+</li>
+<li>
+<h3>Record some data</h3>
+<div class="fancy-content">
+<div class="ut-one-half  ">
+<p>Select <b>Recording</b> from the dropdown menu in the sidebar.</p>
+<p>Choose a storage location and a filename and hit record. <!-- FOOTNOTE --> All the data from MuseIO will be recorded, not just the data that you are plotting.</p>
+<p>When you are finished recording, click <b>Stop</b>.<br>
+</p></div>
+<div class="ut-one-half ut-column-last  ">
+<a href="./Getting Started - Muse Developers_files/hit_record.png"><img src="./Getting Started - Muse Developers_files/hit_record.png" alt="hit_record" width="1053" height="714" class="alignnone size-full wp-image-3529"></a><br>
+</div><div class="clear"></div>
+</div>
+</li>
+<li>
+<h3>Convert your recording to a different file format</h3>
+<div class="fancy-content">
+<p>MuseLab records data in the <a>.muse</a> file format. To convert to a variety of other <a href="http://dev.choosemuse.com/file-formats" title="File Formats">file formats</a> or to replay Muse data from a recording over OSC to another program (say, to look at some data you recorded a while ago with MuseLab) you must use <a href="http://dev.choosemuse.com/research-tools/muselab" title="MuseLab">MusePlayer</a>.</p>
+<p>Open a Terminal or Command Prompt and enter the following command.
+</p><pre class=" prettyprinted"><span class="pln">muse</span><span class="pun">-</span><span class="pln">player</span><span class="pun">-</span><span class="pln">f path</span><span class="pun">/</span><span class="pln">to</span><span class="pun">/</span><span class="pln">recording</span><span class="pun">.</span><span class="pln">muse </span><span class="pun">-</span><span class="pln">C recording</span><span class="pun">.</span><span class="pln">csv</span></pre>
+<p>For more information on how Muse data is stored, check out the <a href="http://dev.choosemuse.com/file-formats" title="File Formats">File Formats</a> section.</p>
+</div>
+</li>
+<li>
+<h3>Go forth and explore!</h3>
+<div class="fancy-content">
+<p>You now know everything you need to know to get started using the Muse Research Tools to experiment with Muse! Have at it!</p>
+</div>
+</li>
+</ol>
+<h2 class="push-30px heading-black">What’s next?</h2>
+<div class="ut-one-third  ">
+<div class="pretty-icon-wrap"><a href="http://developer.choosemuse.com/research-tools/examples"><img src="./Getting Started - Muse Developers_files/ic_examples_sqr_116px.svg" alt="Examples"></a><a href="http://developer.choosemuse.com/research-tools/examples"><div class="bookend  bookend-purple"><div>Examples</div></div></a><div class="subheading">See what else you can do with the Muse Research Tools.</div></div><br>
+</div>
+<div class="ut-one-third  ">
+<div class="pretty-icon-wrap"><a href="http://developer.choosemuse.com/featured-projects/"><img src="./Getting Started - Muse Developers_files/ic_featured_sqr_116px.svg" alt="Featured Projects"></a><a href="http://developer.choosemuse.com/featured-projects/"><div class="bookend  bookend-green"><div>Featured Projects</div></div></a><div class="subheading">Check out the amazing things people are doing with Muse.</div></div><br>
+</div>
+<div class="ut-one-third ut-column-last  ">
+<div class="pretty-icon-wrap"><a href="http://forum.choosemuse.com/"><img src="./Getting Started - Muse Developers_files/ic_forum_sqr_116px.svg" alt="Forum"></a><a href="http://forum.choosemuse.com/" target="_blank"><div class="bookend  bookend-red"><div>Forum</div></div></a><div class="subheading">Questions? Ideas? Cool project to share?</div></div><br>
+</div><div class="clear"></div>
+</div>
+            			         		          
+    </div><!-- .entry-content -->
+    </div>
+</div><!-- #post -->			
+				
+						
+            </div><!-- close #primary -->
+
+                <div id="secondary" class="widget-area grid-15 mobile-grid-100 tablet-grid-15" role="complementary" style="height: 855px;">
+        <ul class="sidebar">
+            <li class="clearfix widget-container search-3 widget_search"><form role="search" method="get" class="search-form" id="searchform" action="http://developer.choosemuse.com/">
+        <label>
+            <span>Search for:</span>
+            <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-submit" value="Search">
+        </form></li><li class="clearfix widget-container text-2 widget_text">			<div class="textwidget"><div class="home-link-wrap"><a class="home-link" href="http://developer.choosemuse.com/"><img class="sidebar-icon" src="./Getting Started - Muse Developers_files/ic_home_white_16.svg" alt="home">Home</a></div></div>
+		</li><li class="clearfix widget-container wpdt-pages-widget-3 wpdt-pages"><div class="dtree">
+<script type="text/javascript">
+/* <![CDATA[ */
+try{
+if(document.getElementById && document.getElementById('oclinks_pge1')){document.getElementById('oclinks_pge1').style.display = 'block';}
+var pge1 = new wpdTree('pge1', 'http://developer.choosemuse.com/','0');
+pge1.config.useLines=0;
+pge1.config.useIcons=0;
+pge1.config.closeSameLevel=1;
+pge1.config.folderLinks=1;
+pge1.config.useSelection=1;
+pge1.a(0,'root','','','','','');
+pge1.a(517,698,'Getting Started','','android/getting-started-with-libmuse-android','','');
+pge1.a(3873,150,'Command Line Options','','research-tools/museplayer/command-line-options','','');
+pge1.a(4143,156,'Data Streaming Protocol','','protocols/data-streaming-protocol','','');
+pge1.a(55874,55869,'Getting Started','','unity/getting-started','','');
+pge1.a(357,995,'Firmware Versions','','hardware-firmware/firmware-versions','','');
+pge1.a(412,244,'Compressed EEG Packets','','protocols/bluetooth-packet-structure/compressed-eeg-packets','','');
+pge1.a(186,1010,'.muse','','file-formats/muse','','');
+pge1.a(196,927,'Getting Started','','research-tools/getting-started','','');
+pge1.a(200,145,'Command Line Options','','research-tools/museio/command-line-options','','');
+pge1.a(204,152,'Configuration Files','','research-tools/muselab/configuration-files','','');
+pge1.a(55516,55769,'Developer SDK Bluetooth Connectivity','','hardware-firmware/bluetooth-connectivity/developer-sdk-bluetooth-connectivity-2','','');
+pge1.a(244,156,'Bluetooth Packet Structure','','protocols/bluetooth-packet-structure','','');
+pge1.a(248,156,'Serial Commands','','protocols/serial-commands','','');
+pge1.a(507,700,'Getting Started','','ios/getting-started-with-libmuse-ios','','');
+pge1.a(55893,55869,'Documentation','','unity/docs','','');
+pge1.a(355,995,'Hardware Specifications','','hardware-firmware/hardware-specifications','','');
+pge1.a(3947,927,'Examples','','research-tools/examples','','');
+pge1.a(698,0,'Android','','android','','');
+pge1.a(190,1010,'.mat','','file-formats/mat','','');
+pge1.a(967,698,'Examples','','android/examples','','');
+pge1.a(971,700,'Examples','','ios/examples','','');
+pge1.a(3648,927,'Available Data','','research-tools/available-data','','');
+pge1.a(353,995,'Headband Configuration Presets','','hardware-firmware/headband-configuration-presets','','');
+pge1.a(188,1010,'.csv','','file-formats/csv','','');
+pge1.a(700,0,'iOS','','ios','','');
+pge1.a(969,698,'API Reference','','android/android-api-reference','','');
+pge1.a(974,700,'API Reference','','ios/ios-api-reference','','');
+pge1.a(55869,0,'Unity','','unity','','');
+pge1.a(361,995,'Button Presses and LED Sequences','','hardware-firmware/button-presses-and-led-sequences','','');
+pge1.a(145,927,'MuseIO','','research-tools/museio','','');
+pge1.a(192,1010,'.txt','','file-formats/txt-oscreplay','','');
+pge1.a(359,55769,'Research Tools Bluetooth Connectivity','','hardware-firmware/bluetooth-connectivity/research-tools-bluetooth-connectivity','','');
+pge1.a(152,927,'MuseLab','','research-tools/muselab','','');
+pge1.a(55769,995,'Bluetooth Connectivity','','hardware-firmware/bluetooth-connectivity','','');
+pge1.a(363,995,'Timing and Synchronization','','hardware-firmware/timing-and-synchronization','','');
+pge1.a(150,927,'MusePlayer','','research-tools/museplayer','','');
+pge1.a(927,0,'Research Tools','','research-tools','','');
+pge1.a(995,0,'Hardware &amp; Firmware','','hardware-firmware','','');
+pge1.a(156,0,'Protocols','','protocols','','');
+pge1.a(1010,0,'File Formats','','file-formats','','');
+pge1.a(11,0,'FAQ','','faq','','');
+pge1.a(158,0,'Release Notes','','release-notes','','');
+pge1.a(230,0,'Support','','support','','');
+pge1.a(48549,0,'Brand Guidelines','','brand-messaging-guidelines','','');
+pge1.a(55227,0,'Third Party Apps','','third-party-apps','','');
+document.write(pge1);
+}catch(e){} /* ]]> */
+</script><div class="dtree_pge" id="dtree_pge1">
+<div class="dtNode"> </div><div id="dpge10" class="clip" style="display:block;"><div class="dtNode"><a href="javascript: pge1.o(18);"><img id="jpge118" src="./Getting Started - Muse Developers_files/ic_android_white_16.svg" alt=""></a><a id="spge118" class="node" href="http://developer.choosemuse.com/android" title="Android" onclick="javascript: pge1.s(18);">Android</a> </div><div id="dpge118" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge11" class="node" href="http://developer.choosemuse.com/android/getting-started-with-libmuse-android" title="Getting Started" onclick="javascript: pge1.s(1);">Getting Started</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge120" class="node" href="http://developer.choosemuse.com/android/examples" title="Examples" onclick="javascript: pge1.s(20);">Examples</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge126" class="node" href="http://developer.choosemuse.com/android/android-api-reference" title="API Reference" onclick="javascript: pge1.s(26);">API Reference</a> </div></div><div class="dtNode"><a href="javascript: pge1.o(25);"><img id="jpge125" src="./Getting Started - Muse Developers_files/ic_apple_white_16.svg" alt=""></a><a id="spge125" class="node" href="http://developer.choosemuse.com/ios" title="iOS" onclick="javascript: pge1.s(25);">iOS</a> </div><div id="dpge125" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge114" class="node" href="http://developer.choosemuse.com/ios/getting-started-with-libmuse-ios" title="Getting Started" onclick="javascript: pge1.s(14);">Getting Started</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge121" class="node" href="http://developer.choosemuse.com/ios/examples" title="Examples" onclick="javascript: pge1.s(21);">Examples</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge127" class="node" href="http://developer.choosemuse.com/ios/ios-api-reference" title="API Reference" onclick="javascript: pge1.s(27);">API Reference</a> </div></div><div class="dtNode"><a href="javascript: pge1.o(28);"><img id="jpge128" src="./Getting Started - Muse Developers_files/ic_unity_white_16.svg" alt=""></a><a id="spge128" class="node" href="http://developer.choosemuse.com/unity" title="Unity" onclick="javascript: pge1.s(28);">Unity</a> </div><div id="dpge128" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge14" class="node" href="http://developer.choosemuse.com/unity/getting-started" title="Getting Started" onclick="javascript: pge1.s(4);">Getting Started</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge115" class="node" href="http://developer.choosemuse.com/unity/docs" title="Documentation" onclick="javascript: pge1.s(15);">Documentation</a> </div></div><div class="dtNode"><a href="javascript: pge1.o(37);"><img id="jpge137" src="./Getting Started - Muse Developers_files/ic_research_white_16.svg" alt=""></a><a id="spge137" class="node" href="http://developer.choosemuse.com/research-tools" title="Research Tools" onclick="javascript: pge1.s(37);">Research Tools</a> </div><div id="dpge137" class="clip"><div class="dtNode current-page"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge18" class="nodeSel" href="http://developer.choosemuse.com/research-tools/getting-started" title="Getting Started" onclick="javascript: pge1.s(8);">Getting Started</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge117" class="node" href="http://developer.choosemuse.com/research-tools/examples" title="Examples" onclick="javascript: pge1.s(17);">Examples</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge122" class="node" href="http://developer.choosemuse.com/research-tools/available-data" title="Available Data" onclick="javascript: pge1.s(22);">Available Data</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a href="javascript: pge1.o(30);"><img id="jpge130" src="./Getting Started - Muse Developers_files/empty.gif" alt=""></a><a id="spge130" class="node" href="http://developer.choosemuse.com/research-tools/museio" title="MuseIO" onclick="javascript: pge1.s(30);">MuseIO</a> </div><div id="dpge130" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge19" class="node" href="http://developer.choosemuse.com/research-tools/museio/command-line-options" title="Command Line Options" onclick="javascript: pge1.s(9);">Command Line Options</a> </div></div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a href="javascript: pge1.o(33);"><img id="jpge133" src="./Getting Started - Muse Developers_files/empty.gif" alt=""></a><a id="spge133" class="node" href="http://developer.choosemuse.com/research-tools/muselab" title="MuseLab" onclick="javascript: pge1.s(33);">MuseLab</a> </div><div id="dpge133" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge110" class="node" href="http://developer.choosemuse.com/research-tools/muselab/configuration-files" title="Configuration Files" onclick="javascript: pge1.s(10);">Configuration Files</a> </div></div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a href="javascript: pge1.o(36);"><img id="jpge136" src="./Getting Started - Muse Developers_files/empty.gif" alt=""></a><a id="spge136" class="node" href="http://developer.choosemuse.com/research-tools/museplayer" title="MusePlayer" onclick="javascript: pge1.s(36);">MusePlayer</a> </div><div id="dpge136" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge12" class="node" href="http://developer.choosemuse.com/research-tools/museplayer/command-line-options" title="Command Line Options" onclick="javascript: pge1.s(2);">Command Line Options</a> </div></div></div><div class="dtNode"><a href="javascript: pge1.o(38);"><img id="jpge138" src="./Getting Started - Muse Developers_files/ic_hardware_white_16.svg" alt=""></a><a id="spge138" class="node" href="http://developer.choosemuse.com/hardware-firmware" title="Hardware &amp; Firmware" onclick="javascript: pge1.s(38);">Hardware &amp; Firmware</a> </div><div id="dpge138" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge15" class="node" href="http://developer.choosemuse.com/hardware-firmware/firmware-versions" title="Firmware Versions" onclick="javascript: pge1.s(5);">Firmware Versions</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge116" class="node" href="http://developer.choosemuse.com/hardware-firmware/hardware-specifications" title="Hardware Specifications" onclick="javascript: pge1.s(16);">Hardware Specifications</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge123" class="node" href="http://developer.choosemuse.com/hardware-firmware/headband-configuration-presets" title="Headband Configuration Presets" onclick="javascript: pge1.s(23);">Headband Configuration Presets</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge129" class="node" href="http://developer.choosemuse.com/hardware-firmware/button-presses-and-led-sequences" title="Button Presses and LED Sequences" onclick="javascript: pge1.s(29);">Button Presses and LED Sequences</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a href="javascript: pge1.o(34);"><img id="jpge134" src="./Getting Started - Muse Developers_files/empty.gif" alt=""></a><a id="spge134" class="node" href="http://developer.choosemuse.com/hardware-firmware/bluetooth-connectivity" title="Bluetooth Connectivity" onclick="javascript: pge1.s(34);">Bluetooth Connectivity</a> </div><div id="dpge134" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge111" class="node" href="http://developer.choosemuse.com/hardware-firmware/bluetooth-connectivity/developer-sdk-bluetooth-connectivity-2" title="Developer SDK Bluetooth Connectivity" onclick="javascript: pge1.s(11);">Developer SDK Bluetooth Connectivity</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge132" class="node" href="http://developer.choosemuse.com/hardware-firmware/bluetooth-connectivity/research-tools-bluetooth-connectivity" title="Research Tools Bluetooth Connectivity" onclick="javascript: pge1.s(32);">Research Tools Bluetooth Connectivity</a> </div></div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge135" class="node" href="http://developer.choosemuse.com/hardware-firmware/timing-and-synchronization" title="Timing and Synchronization" onclick="javascript: pge1.s(35);">Timing and Synchronization</a> </div></div><div class="dtNode"><a href="javascript: pge1.o(39);"><img id="jpge139" src="./Getting Started - Muse Developers_files/ic_protocols_white_16.svg" alt=""></a><a id="spge139" class="node" href="http://developer.choosemuse.com/protocols" title="Protocols" onclick="javascript: pge1.s(39);">Protocols</a> </div><div id="dpge139" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge13" class="node" href="http://developer.choosemuse.com/protocols/data-streaming-protocol" title="Data Streaming Protocol" onclick="javascript: pge1.s(3);">Data Streaming Protocol</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a href="javascript: pge1.o(12);"><img id="jpge112" src="./Getting Started - Muse Developers_files/empty.gif" alt=""></a><a id="spge112" class="node" href="http://developer.choosemuse.com/protocols/bluetooth-packet-structure" title="Bluetooth Packet Structure" onclick="javascript: pge1.s(12);">Bluetooth Packet Structure</a> </div><div id="dpge112" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge16" class="node" href="http://developer.choosemuse.com/protocols/bluetooth-packet-structure/compressed-eeg-packets" title="Compressed EEG Packets" onclick="javascript: pge1.s(6);">Compressed EEG Packets</a> </div></div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge113" class="node" href="http://developer.choosemuse.com/protocols/serial-commands" title="Serial Commands" onclick="javascript: pge1.s(13);">Serial Commands</a> </div></div><div class="dtNode"><a href="javascript: pge1.o(40);"><img id="jpge140" src="./Getting Started - Muse Developers_files/ic_filetypes_white_16.svg" alt=""></a><a id="spge140" class="node" href="http://developer.choosemuse.com/file-formats" title="File Formats" onclick="javascript: pge1.s(40);">File Formats</a> </div><div id="dpge140" class="clip" style="display:none;"><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge17" class="node" href="http://developer.choosemuse.com/file-formats/muse" title=".muse" onclick="javascript: pge1.s(7);">.muse</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge119" class="node" href="http://developer.choosemuse.com/file-formats/mat" title=".mat" onclick="javascript: pge1.s(19);">.mat</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge124" class="node" href="http://developer.choosemuse.com/file-formats/csv" title=".csv" onclick="javascript: pge1.s(24);">.csv</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><img src="./Getting Started - Muse Developers_files/empty.gif" alt=""><a id="spge131" class="node" href="http://developer.choosemuse.com/file-formats/txt-oscreplay" title=".txt" onclick="javascript: pge1.s(31);">.txt</a> </div></div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/ic_faq_white_16.svg" alt=""><a id="spge141" class="node" href="http://developer.choosemuse.com/faq" title="FAQ" onclick="javascript: pge1.s(41);">FAQ</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/ic_releasenotes_white_16.svg" alt=""><a id="spge142" class="node" href="http://developer.choosemuse.com/release-notes" title="Release Notes" onclick="javascript: pge1.s(42);">Release Notes</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/ic_support_white_16.svg" alt=""><a id="spge143" class="node" href="http://developer.choosemuse.com/support" title="Support" onclick="javascript: pge1.s(43);">Support</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/ic_brand_guide_white_16_2.png" alt=""><a id="spge144" class="node" href="http://developer.choosemuse.com/brand-messaging-guidelines" title="Brand Guidelines" onclick="javascript: pge1.s(44);">Brand Guidelines</a> </div><div class="dtNode"><img src="./Getting Started - Muse Developers_files/ic_developer_white_16_2.png" alt=""><a id="spge145" class="node" href="http://developer.choosemuse.com/third-party-apps" title="Third Party Apps" onclick="javascript: pge1.s(45);">Third Party Apps</a> </div></div></div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+try{
+pge1.openTo('196', true); /*wp_query object id*/
+}catch(e){} /* ]]> */
+</script>
+</div></li>        </ul>
+    </div>
+    
+		</div><!-- close grid-container -->
+        
+        <div class="ut-scroll-up-waypoint" data-section="section-getting-started"></div>
+        
+	
+    </div><!-- close main-content-background -->
+    
+    <div class="clear"></div>
+    
+        
+        
+        
+    
+        
+        
+        
+	<!-- Footer Section -->
+    <footer class="footer ut-footer-light" style="width: 1618px;">
+        
+        
+        
+        <a href="http://developer.choosemuse.com/research-tools/getting-started#top" class="toTop"><i class="fa fa-angle-double-up"></i></a>
+    	
+        <div class="footer-content">        
+            
+            <div class="grid-container">
+                
+                <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                
+                    <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup" style="float:Left">
+<form action="http://choosemuse.us4.list-manage.com/subscribe/post?u=b2f517d5cf9587e586228ac82&amp;id=5e11ddf53f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1">
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+	<label for="mce-EMAIL" style="
+    display: block;
+    margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+">Sign up for our mailing list.</label>
+	<input placeholder="Enter your email address" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="
+    width: 200px;
+    display: inline;
+    margin: 0;
+    float: left;
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+">
+<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button" style="
+    visibility: visible;
+    color: white;
+    width: 80px;
+    margin: 0;
+    display: inline;
+    float: left;
+    height: 35px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    box-shadow: none !important;
+    border: 0px transparent !important;
+    font-size: 0.9em;
+"></div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_b2f517d5cf9587e586228ac82_5e11ddf53f" tabindex="-1" value=""></div>
+    <div class="clear"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+<img class="logo" src="./Getting Started - Muse Developers_files/muse logo white.png" alt="Muse: the brain sensing headband">
+<div class="social">
+<a href="http://facebook.com/choosemuse"><img src="./Getting Started - Muse Developers_files/ic_soc_facebook_60px (1).svg" alt="facebook"></a>
+<a href="http://twitter.com/MuseDevelopers"><img src="./Getting Started - Muse Developers_files/ic_soc_twitter_60px (2).svg" alt=""></a>
+<a href="https://www.youtube.com/user/interaxon"><img src="./Getting Started - Muse Developers_files/ic_soc_youtube_60px (1).svg" alt="youtube"></a>
+<a href="https://instagram.com/choosemuse"><img src="./Getting Started - Muse Developers_files/ic_soc_instagram_60px (1).svg" alt="instagram"></a>
+</div>
+<span class="ix-copyright">© Interaxon 2015 all rights reserved</span><div class="more-links"><a href="http://choosemuse.com/">Choosemuse.com</a><a href="http://choosemuse.com/careers/">Careers</a><a href="http://choosemuse.com/the-people-behind-muse/">About us</a><a href="http://developer.choosemuse.com/support/">Support</a></div>                        
+                                            
+                </div>
+                    
+            </div><!-- close container -->        
+        </div><!-- close footer content -->
+        
+	</footer><!-- close footer -->
+        
+   		
+    <div id="mailchimp-top-bar" class=" mctb-sticky mctb-medium">
+			<!-- MailChimp Top Bar v1.0.8 - https://wordpress.org/plugins/mailchimp-top-bar/ -->
+			<div class="mctb-bar" style="display: block;">
+								<form method="post" lpformnum="1">
+					<label></label>
+					<input type="email" name="email" placeholder="Sign up for Muse Developer News" class="mctb-email">
+					<input type="text" name="email_confirm" placeholder="Confirm your email" value="" class="mctb-email-confirm">
+					<input type="submit" value="Subscribe" class="mctb-button">
+					<input type="hidden" name="_mctb" value="1">
+					
+					<input type="hidden" name="_mctb_timestamp" value="1474015834">
+				</form>
+			</div><span class="mctb-close" style="display: block;">▲</span><!-- / MailChimp Top Bar --></div><script type="text/javascript" src="./Getting Started - Muse Developers_files/imagesloaded.pkg.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.qtip.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var gce_grid = null;
+var gce = {"script_debug":"","ajaxurl":"http:\/\/developer.choosemuse.com\/wp-admin\/admin-ajax.php","ajaxnonce":"98952efec6","loadingText":"Loading..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/gce-script.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var code_prettify_settings = {"base_url":"http:\/\/developer.choosemuse.com\/wp-content\/plugins\/code-prettify\/prettify"};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","smooth_scroll_offset":"80"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/front.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/tabs.collapse.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.visible.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.appear.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.fitvids.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/ut.scplugin.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/masonry.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/toucheffects.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/superfish.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/retina.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.mb.YTPlayer.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.parallax.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.prettyPhoto.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/jquery.fittext.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var retina_logos = {"sitelogo_retina":"","alternate_logo_retina":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/ut-init.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var mctb = {"cookieLength":"60","icons":{"hide":"&#x25B2;","show":"&#x25BC;"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/bar.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/widget-easy-twitter-feed-widget.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-core.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-clike.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-bash.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-c.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-javascript.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-coffeescript.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-cpp.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-csharp.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-css.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-gherkin.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-groovy.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-http.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-java.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-markup.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-php.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-php-extras.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-python.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-ruby.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-scss.min.js"></script>
+<script type="text/javascript" src="./Getting Started - Muse Developers_files/prism-sql.min.js"></script>
+
+<!-- Block (171) START-->
+<script type="text/javascript">
+
+jQuery(function(){
+    var $ = jQuery;
+    $('.forum-link').find('a').attr('target', '_blank');
+  
+setTimeout(function(){
+    $('.sidebar-toggle').css('top', $('#header-section').outerHeight() + $('#mailchimp-top-bar').outerHeight() + "px")
+}, 500);
+
+if (window.location.pathname === "/") {
+    
+    var resizeBoxes = function(){
+        if (jQuery(window).width() > 750) {
+            var max = 0;
+            $('.research-tools .inner-content, .developer-sdk .inner-content').each(function(){
+                $(this).css('min-height', 0);
+                var height = $(this).height(); 
+                if (height > max) {
+                    max = height;
+                }
+            });
+            
+            $('.research-tools .inner-content, .developer-sdk .inner-content').each(function(){
+                $(this).css('min-height', max + "px");
+            });
+            
+            max = 0;
+            $('.middle-section .inner-content').each(function(){
+                $(this).css('min-height', 0);
+                var height = $(this).height(); 
+                if (height > max) {
+                    max = height;
+                }
+            });
+            
+            $('.middle-section .inner-content').each(function(){
+                $(this).css('min-height', max + "px");
+            });
+        }
+    }
+    
+    resizeBoxes(); 
+    
+    jQuery(window).resize(jQuery.debounce(250, resizeBoxes));
+}
+  
+$('#header-section').after("<div class='sidebar-toggle'></div>")
+
+$('.sidebar-toggle').click(function(){
+    $('#secondary').animate({width:'toggle'},350);
+})
+  
+/******************************************************************/  
+/* MAILCHIMP 
+/******************************************************************/
+var mc = function(){
+    setTimeout(function(){
+        jQuery('#header-section').css('margin-top', jQuery('.mctb-bar').is(':visible') ? '40px' : '0px');
+    }, 500);
+}
+
+mc();
+
+jQuery('.mctb-close').on('click', function(){
+    mc();
+})
+
+/******************************************************************/  
+/* SIDEBAR 
+/******************************************************************/
+
+if (window.location.pathname.length > 1 &&
+    !window.location.pathname.match("/events") &&
+    !window.location.pathname.match("/blog") &&
+    !window.location.pathname.match("/featured"))
+    {
+    var $parent = jQuery('.nodeSel').parents('.dtNode')
+        $img = $parent.find('img');
+    
+    $parent.addClass('current-page');
+    $img.attr('src', $img.attr('src').replace('white', 'blue'));
+} else if (window.location.pathname.length === 1){
+    var src = jQuery('.home-link-wrap').find('img').attr('src').replace('white', 'blue');
+    jQuery('.nodeSel').removeClass('nodeSel');
+    jQuery('.current-page').removeClass('current-page');
+    jQuery('.home-link-wrap').addClass('current-page').find('img').attr('src', src )
+    jQuery('.home-link-wrap').addClass('current-page');
+} else {
+    jQuery('.nodeSel').removeClass('nodeSel');
+}
+
+var resize_sidebar = function(){
+    $('#secondary').css('height', $(window).height() - $('#header-section').height() + "px");
+    if ($(window).width() > 767){
+        $('#primary, .home .grid-85, footer').width($(window).width() - $('#secondary').width() + "px");
+    } else {
+        $('#primary, .home .grid-85, footer').width('');
+    }
+}
+
+resize_sidebar();
+
+jQuery(window).resize(jQuery.debounce(100, function(){
+    resize_sidebar();
+}));
+
+/*********************/
+/* TOC PAGES
+/*********************/
+
+var $toc = $('#toc_container'),
+    $body = $('body'),
+    offset = $('.heading-background').outerHeight() ;
+
+if ($toc && $(window).width() > 750) {
+    $toc.css('min-height', $(window).height() - $('#header-section').outerHeight() - offset + "px");
+    
+    $(window).scroll($.throttle(250, function(){
+        if ($body.scrollTop() > offset) {
+            $toc.addClass("fix-toc");
+        } else {
+            $toc.removeClass("fix-toc");
+        }
+    
+    }))
+    
+}
+
+var resize_content = function(){
+    $('.toc-content').css('width', $(document).width() - $('#secondary').width() - $('#toc_container').width() - 30 + "px" );
+}
+
+if ( $toc && $(window).width() > 750) {
+    resize_content();
+}
+
+jQuery(window).resize(jQuery.debounce(250, function(){
+    if ($toc && $(window).width() > 750){
+        resize_content();
+        $toc.css('min-height', $(window).height() - $('#header-section').outerHeight() - offset + "px");
+    }
+}));
+/************************************************/
+/* ANDROID GETTING STARTED
+/************************************************/
+
+if (jQuery('.page-id-517').length) {
+    var icons = {
+        'Using Eclipse' : 'https://storage.googleapis.com/ix_choosemuse/uploads/dev-site/ic_eclipse_grey_60px.svg',
+        'Using Android Studio' : 'https://storage.googleapis.com/ix_choosemuse/uploads/dev-site/ic_andStudio_grey_60px.svg'
+    }
+    
+    jQuery('.ut-nav-tabs li a').each(function(){
+        $(this).prepend(jQuery('<img/>').addClass('tab-icon').attr('src', icons[$(this).text()]))
+    });
+}
+   
+
+$('.select').click(function(){
+    $(this).toggleClass('open').siblings('.select-dropdown').slideToggle().show();
+})
+
+
+});
+</script>
+
+
+<script>
+/*! iFrame Resizer (iframeSizer.min.js ) - v2.8.10 - 2015-06-21
+ *  Desc: Force cross domain iframes to size to content.
+ *  Requires: iframeResizer.contentWindow.min.js to be loaded into the target frame.
+ *  Copyright: (c) 2015 David J. Bradshaw - dave@bradshaw.net
+ *  License: MIT
+ */
+
+!function(){"use strict";function a(a,b,c){"addEventListener"in window?a.addEventListener(b,c,!1):"attachEvent"in window&&a.attachEvent("on"+b,c)}function b(){var a,b=["moz","webkit","o","ms"];for(a=0;a<b.length&&!z;a+=1)z=window[b[a]+"RequestAnimationFrame"];z||e(" RequestAnimationFrame not supported")}function c(){var a="Host page";return window.top!==window.self&&(a=window.parentIFrame?window.parentIFrame.getId():"Nested host page"),a}function d(a){return w+"["+c()+"]"+a}function e(a){t&&"object"==typeof window.console&&console.log(d(a))}function f(a){"object"==typeof window.console&&console.warn(d(a))}function g(a){function b(){function a(){k(F),i(),B[G].resizedCallback(F)}g("Height"),g("Width"),l(a,F,"resetPage")}function c(a){var b=a.id;e(" Removing iFrame: "+b),a.parentNode.removeChild(a),B[b].closedCallback(b),delete B[b],e(" --")}function d(){var a=E.substr(x).split(":");return{iframe:document.getElementById(a[0]),id:a[0],height:a[1],width:a[2],type:a[3]}}function g(a){var b=Number(B[G]["max"+a]),c=Number(B[G]["min"+a]),d=a.toLowerCase(),f=Number(F[d]);if(c>b)throw new Error("Value for min"+a+" can not be greater than max"+a);e(" Checking "+d+" is in range "+c+"-"+b),c>f&&(f=c,e(" Set "+d+" to min value")),f>b&&(f=b,e(" Set "+d+" to max value")),F[d]=""+f}function m(){function b(){function a(){e(" Checking connection is from allowed list of origins: "+d);var a;for(a=0;a<d.length;a++)if(d[a]===c)return!0;return!1}function b(){return e(" Checking connection is from: "+f),c===f}return d.constructor===Array?a():b()}var c=a.origin,d=B[G].checkOrigin,f=F.iframe.src.split("/").slice(0,3).join("/");if(d&&""+c!="null"&&!b())throw new Error("Unexpected message received from: "+c+" for "+F.iframe.id+". Message was: "+a.data+". This error can be disabled by setting the checkOrigin: false option or by providing of array of trusted domains.");return!0}function n(){return w===(""+E).substr(0,x)}function o(){var a=F.type in{"true":1,"false":1,undefined:1};return a&&e(" Ignoring init message from meta parent page"),a}function p(a){return E.substr(E.indexOf(":")+v+a)}function q(a){e(" MessageCallback passed: {iframe: "+F.iframe.id+", message: "+a+"}"),B[G].messageCallback({iframe:F.iframe,message:JSON.parse(a)}),e(" --")}function r(){return null===F.iframe?(f(" IFrame ("+F.id+") not found"),!1):!0}function s(a){var b=a.getBoundingClientRect();return h(),{x:parseInt(b.left,10)+parseInt(y.x,10),y:parseInt(b.top,10)+parseInt(y.y,10)}}function u(a){function b(){y=g,z(),e(" --")}function c(){return{x:Number(F.width)+d.x,y:Number(F.height)+d.y}}var d=a?s(F.iframe):{x:0,y:0},g=c();e(" Reposition requested from iFrame (offset x:"+d.x+" y:"+d.y+")"),window.top!==window.self?window.parentIFrame?a?window.parentIFrame.scrollToOffset(g.x,g.y):window.parentIFrame.scrollTo(F.width,F.height):f(" Unable to scroll to requested position, window.parentIFrame not found"):b()}function z(){!1!==B[G].scrollCallback(y)&&i()}function A(a){function b(a){var b=s(a);e(" Moving to in page link (#"+c+") at x: "+b.x+" y: "+b.y),y={x:b.x,y:b.y},z(),e(" --")}var c=a.split("#")[1]||"",d=decodeURIComponent(c),f=document.getElementById(d)||document.getElementsByName(d)[0];window.top!==window.self?window.parentIFrame?window.parentIFrame.moveToAnchor(c):e(" In page link #"+c+" not found and window.parentIFrame not found"):f?b(f):e(" In page link #"+c+" not found")}function C(){switch(F.type){case"close":c(F.iframe);break;case"message":q(p(6));break;case"scrollTo":u(!1);break;case"scrollToOffset":u(!0);break;case"inPageLink":A(p(9));break;case"reset":j(F);break;case"init":b(),B[G].initCallback(F.iframe);break;default:b()}}function D(a){var b=!0;return B[a]||(b=!1,f(F.type+" No settings for "+a+". Message was: "+E)),b}var E=a.data,F={},G=null;n()&&(F=d(),G=F.id,!o()&&D(G)&&(t=B[G].log,e(" Received: "+E),r()&&m()&&(B[G].firstRun=!1,C())))}function h(){null===y&&(y={x:void 0!==window.pageXOffset?window.pageXOffset:document.documentElement.scrollLeft,y:void 0!==window.pageYOffset?window.pageYOffset:document.documentElement.scrollTop},e(" Get page position: "+y.x+","+y.y))}function i(){null!==y&&(window.scrollTo(y.x,y.y),e(" Set page position: "+y.x+","+y.y),y=null)}function j(a){function b(){k(a),m("reset","reset",a.iframe,a.id)}e(" Size reset requested by "+("init"===a.type?"host page":"iFrame")),h(),l(b,a,"init")}function k(a){function b(b){a.iframe.style[b]=a[b]+"px",e(" IFrame ("+c+") "+b+" set to "+a[b]+"px")}var c=a.iframe.id;B[c].sizeHeight&&b("height"),B[c].sizeWidth&&b("width")}function l(a,b,c){c!==b.type&&z?(e(" Requesting animation frame"),z(a)):a()}function m(a,b,c,d){c&&c.contentWindow?(e("["+a+"] Sending msg to iframe ("+b+")"),c.contentWindow.postMessage(w+b,"*")):(f("["+a+"] IFrame not found"),B[d]&&delete B[d])}function n(b){function c(){function a(a){1/0!==B[o][a]&&0!==B[o][a]&&(n.style[a]=B[o][a]+"px",e(" Set "+a+" = "+B[o][a]+"px"))}a("maxHeight"),a("minHeight"),a("maxWidth"),a("minWidth")}function d(a){return""===a&&(n.id=a="iFrameResizer"+s++,t=(b||{}).log,e(" Added missing iframe ID: "+a+" ("+n.src+")")),a}function f(){e(" IFrame scrolling "+(B[o].scrolling?"enabled":"disabled")+" for "+o),n.style.overflow=!1===B[o].scrolling?"hidden":"auto",n.scrolling=!1===B[o].scrolling?"no":"yes"}function g(){("number"==typeof B[o].bodyMargin||"0"===B[o].bodyMargin)&&(B[o].bodyMarginV1=B[o].bodyMargin,B[o].bodyMargin=""+B[o].bodyMargin+"px")}function h(){return o+":"+B[o].bodyMarginV1+":"+B[o].sizeWidth+":"+B[o].log+":"+B[o].interval+":"+B[o].enablePublicMethods+":"+B[o].autoResize+":"+B[o].bodyMargin+":"+B[o].heightCalculationMethod+":"+B[o].bodyBackground+":"+B[o].bodyPadding+":"+B[o].tolerance+":"+B[o].enableInPageLinks+":"+B[o].resizeFrom}function i(b){a(n,"load",function(){var a=B[o].firstRun;m("iFrame.onload",b,n),!a&&B[o].heightCalculationMethod in A&&j({iframe:n,height:0,width:0,type:"init"})}),m("init",b,n)}function k(a){if("object"!=typeof a)throw new TypeError("Options is not an object.")}function l(a){a=a||{},B[o]={firstRun:!0},k(a);for(var b in D)D.hasOwnProperty(b)&&(B[o][b]=a.hasOwnProperty(b)?a[b]:D[b]);t=B[o].log}var n=this,o=d(n.id);l(b),f(),c(),g(),i(h())}function o(a,b){null===C&&(C=setTimeout(function(){C=null,a()},b))}function p(){function a(a){return"parent"===B[a].resizeFrom&&B[a].autoResize&&!B[a].firstRun}o(function(){for(var b in B)a(b)&&m("Window resize","resize",document.getElementById(b),b)},66)}function q(){function c(a,b){if(!a.tagName)throw new TypeError("Object is not a valid DOM element");if("IFRAME"!==a.tagName.toUpperCase())throw new TypeError("Expected <IFRAME> tag, found <"+a.tagName+">.");n.call(a,b)}return b(),a(window,"message",g),a(window,"resize",p),function(a,b){switch(typeof b){case"undefined":case"string":Array.prototype.forEach.call(document.querySelectorAll(b||"iframe"),function(b){c(b,a)});break;case"object":c(b,a);break;default:throw new TypeError("Unexpected data type ("+typeof b+").")}}}function r(a){a.fn.iFrameResize=function(a){return this.filter("iframe").each(function(b,c){n.call(c,a)}).end()}}var s=0,t=!1,u="message",v=u.length,w="[iFrameSizer]",x=w.length,y=null,z=window.requestAnimationFrame,A={max:1,scroll:1,bodyScroll:1,documentElementScroll:1},B={},C=null,D={autoResize:!0,bodyBackground:null,bodyMargin:null,bodyMarginV1:8,bodyPadding:null,checkOrigin:!0,enableInPageLinks:!1,enablePublicMethods:!1,heightCalculationMethod:"offset",interval:32,log:!1,maxHeight:1/0,maxWidth:1/0,minHeight:0,minWidth:0,resizeFrom:"parent",scrolling:!1,sizeHeight:!0,sizeWidth:!1,tolerance:0,closedCallback:function(){},initCallback:function(){},messageCallback:function(){},resizedCallback:function(){},scrollCallback:function(){return!0}};window.jQuery&&r(jQuery),"function"==typeof define&&define.amd?define([],q):"object"==typeof module&&"object"==typeof module.exports?module.exports=q():window.iFrameResize=window.iFrameResize||q()}();
+//# sourceMappingURL=iframeResizer.map
+
+/*
+ * jQuery throttle / debounce - v1.1 - 3/7/2010
+ * http://benalman.com/projects/jquery-throttle-debounce-plugin/
+ * 
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
+</script>
+
+
+<!-- Block (171) END -->
+    
+	<script type="text/javascript">
+    /* <![CDATA[ */        
+        
+		(function($){"use strict";$(document).ready(function(){ window.matchMedia||(window.matchMedia=function(){var c=window.styleMedia||window.media;if(!c){var a=document.createElement("style"),d=document.getElementsByTagName("script")[0],e=null;a.type="text/css";a.id="matchmediajs-test";d.parentNode.insertBefore(a,d);e="getComputedStyle"in window&&window.getComputedStyle(a,null)||a.currentStyle;c={matchMedium:function(b){b="@media "+b+"{ #matchmediajs-test { width: 1px; } }";a.styleSheet?a.styleSheet.cssText=b:a.textContent=b;return"1px"===e.width}}}return function(a){return{matches:c.matchMedium(a|| "all"),media:a||"all"}}}());var ut_modern_media_query = window.matchMedia( "screen and (-webkit-min-device-pixel-ratio:2)");$(".cta-btn a").click( function(event){ if(this.hash){$.scrollTo( this.hash , 650, { easing: "easeInOutExpo" , offset: -79 , "axis":"y" });event.preventDefault();}});if( $(".ut-video-player").length){$(".ut-video-player").mb_YTPlayer();$(".ut-video-control").click(function(event){event.preventDefault();if( $(".ut-video-control").hasClass("ut-unmute")){$(this).removeClass("ut-unmute").addClass("ut-mute").text("MUTE");$(".ut-video-player").unmuteYTPVolume();$(".ut-video-player").setYTPVolume(5);} else {$(this).removeClass("ut-mute").addClass("ut-unmute").text("UNMUTE");$(".ut-video-player").muteYTPVolume();}});}$(".parallax-banner").addClass("fixed").each(function(){$(this).parallax( "50%", 0.6); });$("section").each(function(){var outerHeight = $(this).outerHeight(),offset= "90%",effect= $(this).data("effect");if( outerHeight > $(window).height()/ 2){offset = "70%";}$(this).waypoint( function( direction){var $this = $(this);if( direction === "down" && !$(this).hasClass( effect)){$this.find(".section-content").animate( { opacity: 1 } , 1600);$this.find(".section-header-holder").animate( { opacity: 1 } , 1600);}} , { offset: offset });});});})(jQuery); 
+		
+				     
+     /* ]]> */
+    </script> 
+    
+    </div><!-- close #main-content -->
+	
+            
+    
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+ Served from: developer.choosemuse.com @ 2016-09-16 08:50:34 by W3 Total Cache --><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" src="./Getting Started - Muse Developers_files/saved_resource.html"></iframe><div style="clear: both;"></div><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
