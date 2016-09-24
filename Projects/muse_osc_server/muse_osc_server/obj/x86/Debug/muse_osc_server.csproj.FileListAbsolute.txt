@@ -1,0 +1,7 @@
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\obj\x86\Debug\muse_osc_server.exe
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\bin\Debug\muse_osc_server.exe
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\bin\Debug\muse_osc_server.pdb
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\bin\Debug\SharpOSC.dll
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\bin\Debug\SharpOSC.pdb
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\obj\x86\Debug\muse_osc_server.csprojResolveAssemblyReference.cache
+D:\GitHub\WUSTLBCI\Projects\muse_osc_server\muse_osc_server\obj\x86\Debug\muse_osc_server.pdb
