@@ -1,0 +1,3 @@
+connect with device and output to port 5000 by putting this in terminal:
+
+muse-io --device-search Muse --osc osc.udp://localhost:5000 --preset 14 --dsp
