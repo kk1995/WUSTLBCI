@@ -2,8 +2,7 @@ clear all;
 clc;
 
 
-hudpr = dsp.UDPReceiver('LocalIPPort',5000,'ReceiveBufferSize',65536,...
-    'MaximumMessageLength',8191);
+hudpr = dsp.UDPReceiver('LocalIPPort',5000,'ReceiveBufferSize',);
 
 setup(hudpr);
 exit = 0;
