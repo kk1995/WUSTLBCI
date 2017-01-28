@@ -1,5 +1,9 @@
-To do:
+To do
 
 Find out how to get more than 10 seconds of EEG and acc data on mat file
   (maybe buffer size)
 Find out the actual meaning of the data (units, stuff)
+Find out whether and where we can put another function to read mat file and do real time analysis.
+Look into papers that:
+  Show significant characteristic for that certain task (alpha power difference? phase-amplitude coupling?)
+  Show method to filter out eye noise
