@@ -47,7 +47,7 @@ timeoutSec = 10; %In seconds
 % Starts muse-io.exe
 % Preset 14 set the Muse headset to deliver 4 channels:
 % {'TP9'; 'FP1'; 'FP2'; 'TP10'}
-system(['start "Running: muse-io.exe --preset 14" "C:\Program Files (x86)\Muse\muse-io.exe" --preset 14 --osc osc.tcp://localhost:' num2str(port)]);
+% system(['start "Running: muse-io.exe --preset 14" "C:\Program Files (x86)\Muse\muse-io.exe" --preset 14 --osc osc.tcp://localhost:' num2str(port)]);
 
 
 % This flag (tcpFlag) indicates if the TCP connection will be done using the 
