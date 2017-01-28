@@ -1,0 +1,5 @@
+To do:
+
+Find out how to get more than 10 seconds of EEG and acc data on mat file
+  (maybe buffer size)
+Find out the actual meaning of the data (units, stuff)

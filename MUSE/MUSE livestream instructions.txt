@@ -1,3 +1,7 @@
 connect with device and output to port 5000 by putting this in terminal:
 
-muse-io --device-search Muse --osc osc.udp://localhost:5000 --preset 14 --dsp
+start code: MUSE_data_reception_github.m
+
+run on terminal: muse-io --device-search Muse --osc osc.tcp://localhost:5000 --preset 14 --dsp
+
+enjoy!

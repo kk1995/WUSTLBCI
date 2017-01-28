@@ -1,4 +1,3 @@
-% From https://github.com/MuSAELab/muse_osc/blob/master/osc_server_muse.m
 %OSC_SERVER_MUSE 
 % 1. Executes the application muse-io.exe (Installed with the Muse SDK)
 % https://sites.google.com/a/interaxon.ca/muse-developer-site/home
@@ -42,13 +41,12 @@ oscPathV3_4_0{3,2} = 's';
 % These parameters configure where the data fom muse-io.exe will be sent
 ip = '0.0.0.0'; %Localhost
 port = 5000;  %TCP Port (default port is 5000)
-timeoutSec = 60; %In seconds
+timeoutSec = 10; %In seconds
 
 % Starts muse-io.exe
 % Preset 14 set the Muse headset to deliver 4 channels:
 % {'TP9'; 'FP1'; 'FP2'; 'TP10'}
-% system('muse-io --device-search Muse --osc osc.tcp://localhost:5000 --preset 14 --dsp');
-% system(['start "Running: muse-io.exe --preset 14" "C:\Program Files (x86)\Muse\muse-io.exe" --preset 14 --osc osc.tcp://localhost:' num2str(port)]);
+system(['start "Running: muse-io.exe --preset 14" "C:\Program Files (x86)\Muse\muse-io.exe" --preset 14 --osc osc.tcp://localhost:' num2str(port)]);
 
 
 % This flag (tcpFlag) indicates if the TCP connection will be done using the 
