@@ -83,7 +83,7 @@ end
 %As the EEG output sampling frequency is 220Hz
 fse = 220;
 fsa = 50;
-secBuffer = 10;
+secBuffer = 5;
 
 eegName = {'TP9'; 'FP1'; 'FP2'; 'TP10'};
 eegBuffer = zeros([fse*secBuffer,numel(eegName)]);
@@ -138,6 +138,7 @@ while true
     switch oscPath
         case oscPathV3_4_0{1,1} %The message contains EEG data
          eegBuffer = [eegBuffer(2:end, :); cell2mat(data)];
+         dlmwrite('csv_eegBuffer.csv',cell2mat(data),'-append')
          eegCounter = eegCounter+1;    
         case oscPathV3_4_0{2,1} %The message contains Acceleration data
          accBuffer = [accBuffer(2:end, :); cell2mat(data)];  
@@ -183,6 +184,7 @@ while true
     drawnow;   
     eegCounter = 0;
     end % if eegCounter   
+%     eegBuffer = zeros([fse*secBuffer,numel(eegName)]);
 end %while true
 
 if tcpFlag
