@@ -42,7 +42,7 @@ oscPathV3_4_0{3,2} = 's';
 % These parameters configure where the data fom muse-io.exe will be sent
 ip = '0.0.0.0'; %Localhost
 port = 5000;  %TCP Port (default port is 5000)
-timeoutSec = 60; %In seconds
+timeoutSec = 120; %In seconds
 
 % Starts muse-io.exe
 % Preset 14 set the Muse headset to deliver 4 channels:
@@ -99,7 +99,7 @@ conf1 = true;
 figure()
 run = true;
 % finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
-runTime = datenum(clock + [0, 0, 0, 0, 1, 0]);
+runTime = datenum(clock + [0, 0, 0, 0, floor(timeoutSec/60), timeoutSec-floor(timeoutSec/60)*60+20]);
 tic
 while datenum(clock) < runTime
     if tcpFlag
