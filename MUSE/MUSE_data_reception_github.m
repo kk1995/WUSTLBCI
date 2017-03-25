@@ -1,5 +1,5 @@
 % From https://github.com/MuSAELab/muse_osc/blob/master/osc_server_muse.m
-%OSC_SERVER_MUSE 
+%OSC_SERVER_MUSE
 % 1. Executes the application muse-io.exe (Installed with the Muse SDK)
 % https://sites.google.com/a/interaxon.ca/muse-developer-site/home
 % 2. Reads the OSC packages from the muse-io.exe
@@ -7,11 +7,11 @@
 % 4. Plots EEG and acceleration data in online
 %
 % More than one Muse headband can be used at the same time, each one will be
-% managed by a different instance of this script. In order to do this 
-% change the TCP port (variable port in the code) to have a 
+% managed by a different instance of this script. In order to do this
+% change the TCP port (variable port in the code) to have a
 % different TCP port for each Muse.
 %
-% Raymundo Cassani 
+% Raymundo Cassani
 % raymundo.cassani@gmail.com
 % November 2014
 
@@ -51,36 +51,21 @@ timeoutSec = 120; %In seconds
 % system(['start "Running: muse-io.exe --preset 14" "C:\Program Files (x86)\Muse\muse-io.exe" --preset 14 --osc osc.tcp://localhost:' num2str(port)]);
 
 
-% This flag (tcpFlag) indicates if the TCP connection will be done using the 
-% TCP/IP objects(tcpFlag == true) Instrumentation Control Toolbox and Relase >2011 are needed; 
-% OR using 
+% This flag (tcpFlag) indicates if the TCP connection will be done using the
+% TCP/IP objects(tcpFlag == true) Instrumentation Control Toolbox and Relase >2011 are needed;
+% OR using
 % Java ServerSocker (tcpFlag == false)
 tcpFlag = tbFlag && releaseYear > 2011;
 
-if tcpFlag
-    tcpServer=tcpip(ip, port, 'NetworkRole', 'server');
-    tcpServer.InputBufferSize = 5000;
-    tcpServer.Timeout = timeoutSec;
-    %Open a connection. This will not return until a connection is received.
+tcpServer=tcpip(ip, port, 'NetworkRole', 'server');
+tcpServer.InputBufferSize = 5000;
+tcpServer.Timeout = timeoutSec;
+%Open a connection. This will not return until a connection is received.
 %     command = 'muse-io --device-search Muse --osc osc.tcp://localhost:5000 --preset 14 --dsp';
 %     [status,cmdout] = system(command);
-    fopen(tcpServer);
-else
-    import java.net.ServerSocket
-    import java.net.InetSocketAddress
-    import java.io.*
-
-    serverISA = InetSocketAddress(ip, port);
-    serverSSocket = ServerSocket(port,0,serverISA.getAddress);
-    serverSSocket.setSoTimeout(timeoutSec*1000);
-
-    %Open a connection. This will not return until a connection is received.
-    serverSocket = serverSSocket.accept;
-
-    serverInputStream = serverSocket.getInputStream();
-    serverDIS = DataInputStream(serverInputStream); 
-end
-
+display('Opening tcpServer');
+fopen(tcpServer);
+display('Opened tcpServer');
 %Size of buffers to Read EEG ACC
 %As the EEG output sampling frequency is 220Hz
 fse = 220;
@@ -100,8 +85,12 @@ figure()
 run = true;
 % finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
 runTime = datenum(clock + [0, 0, 0, 0, floor(timeoutSec/60), timeoutSec-floor(timeoutSec/60)*60+20]);
+init = 1;
+hfig=playpause();
 tic
 while datenum(clock) < runTime
+    state = playpause();
+    init = 0;
     if tcpFlag
         try %Catch Matlab error
             a = fread(tcpServer, 4);  %How large is the package (# bytes)
@@ -114,7 +103,7 @@ while datenum(clock) < runTime
         catch err;
             break
         end
-        
+
     else %Utilising Java Classes
         for ind = 1:4 %How large is the package (# bytes)
             try
@@ -136,19 +125,19 @@ while datenum(clock) < runTime
             break
         end
     end
-    
+
     [oscPath, oscTag, oscData] = splitOscMessage(bytesData);
     data = oscFormat(oscTag,oscData);
-    
+
     switch oscPath
         case oscPathV3_4_0{1,1} %The message contains EEG data
          eegBuffer = [eegBuffer(2:end, :); cell2mat(data)];
-         dlmwrite('csv_eegBuffer.csv',cell2mat(data),'-append')
-         eegCounter = eegCounter+1;    
+         dlmwrite('csv_eegBuffer.csv',[cell2mat(data) state],'-append')
+         eegCounter = eegCounter+1;
         case oscPathV3_4_0{2,1} %The message contains Acceleration data
-         accBuffer = [accBuffer(2:end, :); cell2mat(data)];  
+         accBuffer = [accBuffer(2:end, :); cell2mat(data)];
         case oscPathV3_4_0{3,1} %The message contains Configuration data
-        %Show configuration 
+        %Show configuration
          if conf1
            conf = data{1}(2:end-2);
            Ctmp = textscan(conf,'%s','delimiter',',');
@@ -157,10 +146,10 @@ while datenum(clock) < runTime
            conf1 = false;
          end
         otherwise
-        %Do nothing    
-        %More cases can be added to treat other paths   
+        %Do nothing
+        %More cases can be added to treat other paths
     end
-      
+
 %Plot every 44 EEG samples approx 200ms
     if eegCounter == 44
         if plot1
@@ -169,43 +158,37 @@ while datenum(clock) < runTime
          h1 = plot(time,eegBuffer);
          legend(eegName, 'Location','EastOutside');
          xlabel('Time (s)')
-         ylabel('Voltage (uV)')        
-         
+         ylabel('Voltage (uV)')
+
          subplot(2,1,2);
          time = 0:1/fsa:secBuffer-1/fsa;
          h2= plot(time,accBuffer);
          xlabel('Time (s)')
          ylabel('Acceleration (mG)')
          legend(h2, accName, 'Location','EastOutside');
-        
+
          plot1 = false;
-        
+
         else
          cell1 = (num2cell(eegBuffer,1))';
          set(h1,{'ydata'},cell1);
          cell2 = (num2cell(accBuffer,1))';
          set(h2,{'ydata'},cell2);
         end
-    drawnow;   
+    drawnow;
     eegCounter = 0;
-    end % if eegCounter   
+    end % if eegCounter
 %     eegBuffer = zeros([fse*secBuffer,numel(eegName)]);
 %     if datenum(clock) >= finalTime
 %         finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
 %         dlmwrite('csv_eegBuffer.csv',[]);
 %     else
 %     end
-        
-    
+
+
 end %while true
 toc
-
-if tcpFlag
     fclose(tcpServer);
     delete(tcpServer);
-else
-    serverSocket.close();
-    serverSSocket.close();
-end
 
 display('End of Acquisition');
