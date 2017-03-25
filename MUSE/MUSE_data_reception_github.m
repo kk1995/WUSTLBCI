@@ -18,7 +18,7 @@
 % %%%%%%%%%%%%%%%%%%%%
 clear all;
 close all;
-
+dlmwrite('csv_eegBuffer.csv',[]);
 % Check if the Instrumentation Control Toolbox is present
 tbName = 'Instrument Control Toolbox';
 verInfo = ver;
@@ -62,6 +62,8 @@ if tcpFlag
     tcpServer.InputBufferSize = 5000;
     tcpServer.Timeout = timeoutSec;
     %Open a connection. This will not return until a connection is received.
+%     command = 'muse-io --device-search Muse --osc osc.tcp://localhost:5000 --preset 14 --dsp';
+%     [status,cmdout] = system(command);
     fopen(tcpServer);
 else
     import java.net.ServerSocket
@@ -95,8 +97,11 @@ plot1 = true;
 conf1 = true;
 
 figure()
-
-while true
+run = true;
+% finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
+runTime = datenum(clock + [0, 0, 0, 0, 1, 0]);
+tic
+while datenum(clock) < runTime
     if tcpFlag
         try %Catch Matlab error
             a = fread(tcpServer, 4);  %How large is the package (# bytes)
@@ -185,7 +190,15 @@ while true
     eegCounter = 0;
     end % if eegCounter   
 %     eegBuffer = zeros([fse*secBuffer,numel(eegName)]);
+%     if datenum(clock) >= finalTime
+%         finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
+%         dlmwrite('csv_eegBuffer.csv',[]);
+%     else
+%     end
+        
+    
 end %while true
+toc
 
 if tcpFlag
     fclose(tcpServer);
