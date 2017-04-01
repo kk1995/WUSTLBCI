@@ -20,7 +20,7 @@ clear all;
 close all;
 
 % params
-demo = 1;
+demo = 0;
 
 if ~demo
     dlmwrite('csv_eegBuffer.csv',[]);
@@ -95,8 +95,12 @@ if ~demo
     init = 1;
 end
 runTime = datenum(clock + [0, 0, 0, 0, floor(timeoutSec/60), timeoutSec-floor(timeoutSec/60)*60+20]);
-[music_y,music_Fs]=audioread('Allegro from Duet in C Major.mp3');
+% [music_y,music_Fs]=audioread('Allegro from Duet in C Major.mp3');
 hfig=playpause();
+musicChosen = 0;
+% while musicChosen
+%     playpause(hfig);
+% end
 tic
 while datenum(clock) < runTime
     state = playpause();
@@ -162,33 +166,33 @@ while datenum(clock) < runTime
         end
         
         %Plot every 44 EEG samples approx 200ms
-        if eegCounter == 44
-            if plot1
-                subplot(2,1,1);
-                time = 0:1/fse:secBuffer-1/fse;
-                h1 = plot(time,eegBuffer);
-                legend(eegName, 'Location','EastOutside');
-                xlabel('Time (s)')
-                ylabel('Voltage (uV)')
-                
-                subplot(2,1,2);
-                time = 0:1/fsa:secBuffer-1/fsa;
-                h2= plot(time,accBuffer);
-                xlabel('Time (s)')
-                ylabel('Acceleration (mG)')
-                legend(h2, accName, 'Location','EastOutside');
-                
-                plot1 = false;
-                
-            else
-                cell1 = (num2cell(eegBuffer,1))';
-                set(h1,{'ydata'},cell1);
-                cell2 = (num2cell(accBuffer,1))';
-                set(h2,{'ydata'},cell2);
-            end
-            drawnow;
-            eegCounter = 0;
-        end % if eegCounter
+%         if eegCounter == 44
+%             if plot1
+%                 subplot(2,1,1);
+%                 time = 0:1/fse:secBuffer-1/fse;
+%                 h1 = plot(time,eegBuffer);
+%                 legend(eegName, 'Location','EastOutside');
+%                 xlabel('Time (s)')
+%                 ylabel('Voltage (uV)')
+%                 
+%                 subplot(2,1,2);
+%                 time = 0:1/fsa:secBuffer-1/fsa;
+%                 h2= plot(time,accBuffer);
+%                 xlabel('Time (s)')
+%                 ylabel('Acceleration (mG)')
+%                 legend(h2, accName, 'Location','EastOutside');
+%                 
+%                 plot1 = false;
+%                 
+%             else
+%                 cell1 = (num2cell(eegBuffer,1))';
+%                 set(h1,{'ydata'},cell1);
+%                 cell2 = (num2cell(accBuffer,1))';
+%                 set(h2,{'ydata'},cell2);
+%             end
+%             drawnow;
+%             eegCounter = 0;
+%         end % if eegCounter
         %     eegBuffer = zeros([fse*secBuffer,numel(eegName)]);
         %     if datenum(clock) >= finalTime
         %         finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
