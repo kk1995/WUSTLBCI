@@ -22,7 +22,7 @@ function varargout = playpause(varargin)
 
 % Edit the above text to modify the response to help playpause
 
-% Last Modified by GUIDE v2.5 25-Mar-2017 17:51:42
+% Last Modified by GUIDE v2.5 31-Mar-2017 21:44:39
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -63,14 +63,13 @@ guidata(hObject, handles);
 
 
 % --- Outputs from this function are returned to the command line.
-function varargout = playpause_OutputFcn(hObject, eventdata, handles) 
+function varargout = playpause_OutputFcn(hObject, eventdata, handles)
 % varargout  cell array for returning output args (see VARARGOUT);
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
 % Get default command line output from handles structure
-    
 varargout{1} = handles.togglebutton1.Value;
 % varargout{1} = get(handles.pushbutton1.Value);
 
@@ -102,8 +101,10 @@ function togglebutton1_Callback(hObject, eventdata, handles)
 button_state = get(hObject,'Value');
 if button_state == get(hObject,'Max')
     handles.edit1.String = 'Music Play';
+    resume(handles.musicPlayer)
 	display('down');
 elseif button_state == get(hObject,'Min')
+    pause(handles.musicPlayer)
 	display('up');
     handles.edit1.String = 'Music Paused';
 end
@@ -113,3 +114,19 @@ end
 % handles    structure with handles and user data (see GUIDATA)
 
 % Hint: get(hObject,'Value') returns toggle state of togglebutton1
+
+
+% --- Executes on button press in pushbutton2.
+function pushbutton2_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+[filename1,filepath1]=uigetfile({'*.*','All Files'},...
+  'Select Data File 1');
+  cd(filepath1);
+  [y,Fs]=audioread(filename1);
+  handles.musicY=y;
+  handles.musicFs=Fs;
+  player=audioplayer(y,Fs);
+  handles.musicPlayer = player;
+  guidata(hObject, handles);

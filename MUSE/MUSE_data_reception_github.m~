@@ -91,10 +91,9 @@ if ~demo
     % figure()
     run = true;
     % finalTime = datenum(clock + [0, 0, 0, 0, 0, 10]);
-    
+    runTime = datenum(clock + [0, 0, 0, 0, floor(timeoutSec/60), timeoutSec-floor(timeoutSec/60)*60+20]);
     init = 1;
 end
-runTime = datenum(clock + [0, 0, 0, 0, floor(timeoutSec/60), timeoutSec-floor(timeoutSec/60)*60+20]);
 [music_y,music_Fs]=audioread('Allegro from Duet in C Major.mp3');
 hfig=playpause();
 tic
@@ -199,9 +198,9 @@ while datenum(clock) < runTime
     end
 end %while true
 
+
 toc
-if ~demo
     fclose(tcpServer);
     delete(tcpServer);
-end
+
 display('End of Acquisition');
